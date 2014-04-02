@@ -13,7 +13,7 @@ import requests
 import config
 import api
 import extract_quake
-
+import lib
 
 
 def get_tsunami_feed():
@@ -24,7 +24,7 @@ def get_tsunami_feed():
     tsunamis = []
 
     url = "http://ptwc.weather.gov/feeds/ptwc_rss_pacific.xml"
-    url = r"rss.txt"
+    #url = r"rss.txt"
     d = feedparser.parse(url)
     for i in d.entries:
         description = i.description.replace("\n", " ")
@@ -61,10 +61,11 @@ def save_tuit(message):
     lib.insert_to_db(message)
 
 def tuit(lista):
+    #print lista
     oauth = api.get_oauth()
 
     users = [
-            'manubellido',
+            #'manubellido',
             'aniversarioperu',
             #'ernestocabralm'
             ]
@@ -72,6 +73,7 @@ def tuit(lista):
         # send mention
         for message in lista:
             status = "@" + twitter_user + " TEST " + message
+            #print status
             payload = {
                     'status': status,
                     }
@@ -79,10 +81,10 @@ def tuit(lista):
 
             try:
                 r = requests.post(url=url, auth=oauth, params=payload)
-                print json.loads(r.text)['id_str']
-                save_tuit(message)
+                #print json.loads(r.text)['id_str']
+                save_tuit(status)
             except:
-                print "Error", r.text
+                print "Error"
 
 def main():
     #time_difference between the server time and Lima

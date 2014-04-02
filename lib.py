@@ -1,14 +1,16 @@
+import os
 import re
 
 import dataset
 import sqlalchemy
 
-def create_database():
+import config
 
-    print "Creating database"
+def create_database():
     filename = os.path.join(config.base_folder, "tuits.db")
     if not os.path.isfile(filename):
         try:
+            print "Creating database"
             db = dataset.connect('sqlite:///' + filename)
             table = db.create_table("tuits")
             table.create_column('url', sqlalchemy.String)
@@ -19,6 +21,8 @@ def create_database():
 
 
 def insert_to_db(tuit):
+    import sys
+    import dataset
     filename = os.path.join(config.base_folder, "tuits.db")
     db = dataset.connect("sqlite:///" + filename)
     table = db['tuits']
@@ -31,6 +35,7 @@ def insert_to_db(tuit):
     item['url'] = match.groups()[0]
     item['tuit'] = tuit
     item['twitter_user'] = user.groups()[0]
+
 
     if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
         print "saving in db %s" % str(item['tuit'])
