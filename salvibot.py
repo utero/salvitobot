@@ -17,7 +17,7 @@ def get_tsunami_feed():
     out = False
 
     url = "http://ptwc.weather.gov/feeds/ptwc_rss_pacific.xml"
-    url = r"rss.txt"
+    #url = r"rss.txt"
     d = feedparser.parse(url)
     for i in d.entries:
         description = i.description.replace("\n", " ")
