@@ -1,0 +1,6 @@
+config*
+.*swp
+*pyc
+.*#
+*txt
+*xml
