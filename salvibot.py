@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#import config
 from datetime import datetime
 from datetime import timedelta as td
 import re
 import sys
-#import api
+import json
 
 import feedparser
 import requests
 
+import config
+import api
 import extract_quake
 
 
@@ -19,6 +20,8 @@ def get_tsunami_feed():
     warning = False
     watch = False
     out = False
+
+    tsunamis = []
 
     url = "http://ptwc.weather.gov/feeds/ptwc_rss_pacific.xml"
     url = r"rss.txt"
@@ -50,20 +53,49 @@ def get_tsunami_feed():
                 out += ". Precaución de tsunami para PERU "
             out += "reportado a las " + str(pubdate) + " "
             out += i.link
-            print out
+            tsunamis.append(out)
+    return tsunamis
+
+def save_tuit(message):
+    lib.create_database()
+    lib.insert_to_db(message)
 
 def tuit(lista):
-    for i in lista:
-        print i
+    oauth = api.get_oauth()
+
+    users = [
+            'manubellido',
+            'aniversarioperu',
+            #'ernestocabralm'
+            ]
+    for twitter_user in users:
+        # send mention
+        for message in lista:
+            status = "@" + twitter_user + " TEST " + message
+            payload = {
+                    'status': status,
+                    }
+            url = "https://api.twitter.com/1.1/statuses/update.json"
+
+            try:
+                r = requests.post(url=url, auth=oauth, params=payload)
+                print json.loads(r.text)['id_str']
+                save_tuit(message)
+            except:
+                print "Error", r.text
 
 def main():
     #time_difference between the server time and Lima
     time_difference = 8
     tsunamis = get_tsunami_feed()
+    #print json.dumps(tsunamis, indent=4)
     sismos = extract_quake.extract(time_difference)
+    #print json.dumps(sismos, indent=4)
 
     if len(sismos) > 0:
         tuit(sismos)
+    if len(tsunamis) > 0:
+        tuit(tsunamis)
 
 if __name__ == "__main__":
     main()
