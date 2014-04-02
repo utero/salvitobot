@@ -65,7 +65,7 @@ def tuit(lista):
     oauth = api.get_oauth()
 
     users = [
-            #'manubellido',
+            'manubellido',
             'aniversarioperu',
             #'ernestocabralm'
             ]
