@@ -11,6 +11,8 @@ import sys
 import feedparser
 import requests
 
+import extract_quake
+
 
 
 def get_tsunami_feed():
@@ -19,7 +21,7 @@ def get_tsunami_feed():
     out = False
 
     url = "http://ptwc.weather.gov/feeds/ptwc_rss_pacific.xml"
-    #url = r"rss.txt"
+    url = r"rss.txt"
     d = feedparser.parse(url)
     for i in d.entries:
         description = i.description.replace("\n", " ")
@@ -51,7 +53,10 @@ def get_tsunami_feed():
             print out
 
 def main():
+    #time_difference between the server time and Lima
+    time_difference = 8
     get_tsunami_feed()
+    extract_quake.extract(time_difference)
 
 if __name__ == "__main__":
     main()
