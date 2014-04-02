@@ -52,11 +52,18 @@ def get_tsunami_feed():
             out += i.link
             print out
 
+def tuit(lista):
+    for i in lista:
+        print i
+
 def main():
     #time_difference between the server time and Lima
     time_difference = 8
-    get_tsunami_feed()
-    extract_quake.extract(time_difference)
+    tsunamis = get_tsunami_feed()
+    sismos = extract_quake.extract(time_difference)
+
+    if len(sismos) > 0:
+        tuit(sismos)
 
 if __name__ == "__main__":
     main()

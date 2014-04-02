@@ -25,11 +25,9 @@ def extract(time_difference):
     for i in data['features']:
         obj = {}
         if "Peru" in i['properties']['place'] or "Chile" in i['properties']['place']:
-            date = datetime.fromtimestamp(int(i['properties']['time']/1000)).strftime('%H:%M:%S %d %b %Y')
+            date = datetime.fromtimestamp(int(i['properties']['time'])/1000).strftime('%H:%M:%S %d %b %Y')
             date_obj = datetime.strptime(date, '%H:%M:%S %d %b %Y') - td(hours=time_difference)
-            print date_obj
-            sys.exit()
-            date += " del " + time.strftime('%d %b', time.localtime(i['properties']['time']/1000))
+            date = date_obj.strftime('%H:%M') + " del " + date_obj.strftime('%d %b')
 
             if i['properties']['type'] == 'earthquake':
                 obj['type'] = "Sismo"
@@ -37,11 +35,18 @@ def extract(time_difference):
                 obj['type'] = "Quarry"
 
             obj['magnitud'] = i['properties']['mag']
+            obj['magnitud_type'] = i['properties']['magType']
             obj['place'] = i['properties']['place']
             obj['date'] = date
+            obj['link'] = i['properties']['url']
 
-
-        print obj
+            out = obj['type'].upper()
+            out += ". " + str(obj['magnitud']) + " grados " + obj['magnitud_type']
+            out += " en " + obj['place']
+            out += ". A horas " + obj['date']
+            out += " " + obj['link']
+        sismos_peru.append(out)
+    return sismos_peru
 
 
 
