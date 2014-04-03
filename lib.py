@@ -34,9 +34,22 @@ def insert_to_db(tuit):
     item = dict()
     item['url'] = match.groups()[0]
     item['tuit'] = tuit
-    item['twitter_user'] = user.groups()[0]
+    if user:
+        item['twitter_user'] = user.groups()[0]
 
-
-    if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
-        print "saving in db %s" % str(item['tuit'])
-        table.insert(item)
+        #if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
+        if not table.find_one(url=item['url']):
+            print "DO TUIT: %s" % str(item['tuit'])
+            table.insert(item)
+            return "do_tuit"
+        else:
+            print "DONT TUIT: %s" % str(item['tuit'])
+            return "dont_tuit"
+    else:
+        if not table.find_one(url=item['url']):
+            print "DO TUIT: %s" % str(item['tuit'])
+            table.insert(item)
+            return "do_tuit"
+        else:
+            print "DONT TUIT: %s" % str(item['tuit'])
+            return "dont_tuit"

@@ -16,8 +16,8 @@ def extract(time_difference):
     
     import requests
 
-    # url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_hour.geojson"
-    url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson"
+    url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_hour.geojson"
+    #url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson"
     r = requests.get(url)
     data = json.loads(r.text)
 

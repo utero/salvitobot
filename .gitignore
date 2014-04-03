@@ -1,3 +1,5 @@
+*db
+cron.log
 config*
 .*swp
 *pyc
