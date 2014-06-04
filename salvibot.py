@@ -74,6 +74,7 @@ def tuit(lista):
         # send mention
         for message in lista:
             #status = "@" + twitter_user + " TEST " + message
+            #status = message 
             status = message + " cc @" + twitter_user
             #status = message
 

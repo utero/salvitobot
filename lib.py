@@ -37,8 +37,7 @@ def insert_to_db(tuit):
     if user:
         item['twitter_user'] = user.groups()[0]
 
-        #if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
-        if not table.find_one(url=item['url']):
+        if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
             print "DO TUIT: %s" % str(item['tuit'])
             table.insert(item)
             return "do_tuit"

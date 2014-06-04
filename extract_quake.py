@@ -5,6 +5,7 @@ import argparse
 from argparse import RawTextHelpFormatter
 import codecs
 import sys
+import config
 
 
 def extract(time_difference):
@@ -16,36 +17,45 @@ def extract(time_difference):
     
     import requests
 
-    url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_hour.geojson"
-    #url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson"
-    r = requests.get(url)
-    data = json.loads(r.text)
-
+    # url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_hour.geojson"
+    # url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson"
+    urls = ["http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
+            "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
+            ]
     sismos_peru = []
-    for i in data['features']:
-        obj = {}
-        if "Peru" in i['properties']['place'] or "Chile" in i['properties']['place']:
-            date = datetime.fromtimestamp(int(i['properties']['time'])/1000).strftime('%H:%M:%S %d %b %Y')
-            date_obj = datetime.strptime(date, '%H:%M:%S %d %b %Y') - td(hours=time_difference)
-            date = date_obj.strftime('%H:%M') + " del " + date_obj.strftime('%d %b')
+    for url in urls:
+        r = requests.get(url)
+        data = json.loads(r.text)
 
-            if i['properties']['type'] == 'earthquake':
-                obj['type'] = "Sismo"
-            elif i['properties']['type'] == 'quarry':
-                obj['type'] = "Quarry"
+        filename = os.path.join(config.base_folder, str(time.time()) + ".json")
+        f = codecs.open(filename, "w", "utf-8")
+        f.write(json.dumps(data, indent=4))
+        f.close()
 
-            obj['magnitud'] = i['properties']['mag']
-            obj['magnitud_type'] = i['properties']['magType']
-            obj['place'] = i['properties']['place']
-            obj['date'] = date
-            obj['link'] = i['properties']['url']
+        for i in data['features']:
+            obj = {}
+            if "Peru" in i['properties']['place'] or "Chile" in i['properties']['place']:
+                date = datetime.fromtimestamp(int(i['properties']['time'])/1000).strftime('%H:%M:%S %d %b %Y')
+                date_obj = datetime.strptime(date, '%H:%M:%S %d %b %Y') - td(hours=time_difference)
+                date = date_obj.strftime('%H:%M') + " del " + date_obj.strftime('%d %b')
+    
+                if i['properties']['type'] == 'earthquake':
+                    obj['type'] = "Sismo"
+                elif i['properties']['type'] == 'quarry':
+                    obj['type'] = "Quarry"
 
-            out = obj['type'].upper()
-            out += ". " + str(obj['magnitud']) + " grados " + obj['magnitud_type']
-            out += " en " + obj['place']
-            out += ". A horas " + obj['date']
-            out += " " + obj['link']
-        sismos_peru.append(out)
+                obj['magnitud'] = i['properties']['mag']
+                obj['magnitud_type'] = i['properties']['magType']
+                obj['place'] = i['properties']['place']
+                obj['date'] = date
+                obj['link'] = i['properties']['url']
+
+                out = obj['type'].upper()
+                out += ". " + str(obj['magnitud']) + " grados " + obj['magnitud_type']
+                out += " en " + obj['place']
+                out += ". A horas " + obj['date']
+                out += " " + obj['link']
+            sismos_peru.append(out)
     return sismos_peru
 
 
