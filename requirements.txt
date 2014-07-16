@@ -1,3 +1,4 @@
 dataset==0.5.4
 python-wordpress-xmlrpc==2.3
 requests==2.3.0
+feedparser==5.1.3
