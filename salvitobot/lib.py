@@ -79,12 +79,12 @@ class DataExtractor(object):
         for url in self.urls:
             r = requests.get(url)
             data = json.loads(r.text)
-    
+
             filename = os.path.join(config.base_folder, str(time.time()) + ".json")
             f = codecs.open(filename, "w", "utf-8")
             f.write(json.dumps(data, indent=4))
             f.close()
-    
+
             for i in data['features']:
                 place = i['properties']['place']
                 if "peru" in place.lower() or "chile" in place.lower():
