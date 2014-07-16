@@ -96,6 +96,7 @@ class DataExtractor(object):
                     # tz: timezone, number of minutes to correct from Epicenter
                     # to UTC
                     obj['tz'] = i['properties']['tz']
+                    obj['type'] = i['properties']['type']
 
                     obj['link'] = i['properties']['url']
                     obj['place'] = i['properties']['place']
@@ -105,13 +106,16 @@ class DataExtractor(object):
                     # depth is in km
                     obj['depth'] = i['geometry']['coordinates'][2]
 
-
-
-                    """
                     date = datetime.fromtimestamp(int(i['properties']['time'])/1000).strftime('%H:%M:%S %d %b %Y')
                     date_obj = datetime.strptime(date, '%H:%M:%S %d %b %Y') - td(hours=config.time_difference)
                     date = date_obj.strftime('%H:%M') + " del " + date_obj.strftime('%d %b')
-                    obj['date'] = date
-                    """
+
+                    out = "SISMO"
+                    out += ". " + str(obj['magnitud']) + " grados " + obj['magnitud_type']
+                    out += " en " + obj['place']
+                    out += ". A horas " + date
+                    out += " " + obj['link']
+
+                    obj['tuit'] = out
                     sismos_peru.append(obj)
         return sismos_peru

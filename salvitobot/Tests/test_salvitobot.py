@@ -10,7 +10,9 @@ class SalvitoTest(unittest.TestCase):
         json_file = "1405369502.25.json"
         magnitude = 5.5
         url = "http://aniversarioperu.me/salvitobot/1405371303.23.json"
-        result = DataExtractor(url).get_items()[0]['magnitud']
+        result = DataExtractor(url).get_items()
+        print result
+        result = result[0]['magnitud']
         self.assertEqual(magnitude, result)
 
 

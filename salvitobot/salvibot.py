@@ -12,7 +12,7 @@ import requests
 
 import config
 import api
-import extract_quake
+from salvitobot.lib import DataExtractor
 import lib
 
 
@@ -104,7 +104,8 @@ def main():
     #print json.dumps(tsunamis, indent=4)
 
     print "Buscando sismos"
-    sismos = extract_quake.extract(time_difference)
+    extractor = DataExtractor()
+    sismos = extractor.get_items()
     #print json.dumps(sismos, indent=4)
 
     if len(sismos) > 0:
