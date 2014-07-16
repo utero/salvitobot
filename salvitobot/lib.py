@@ -12,7 +12,45 @@ import requests
 import sqlalchemy
 
 import config
+from salvitobot import api
 
+
+def tuit(lista, debug):
+    #print lista
+    oauth = api.get_oauth()
+
+    users = [
+            #'manubellido',
+            #'aniversarioperu',
+            'indeciperu',
+            #'ernestocabralm'
+            ]
+    for twitter_user in users:
+        # send mention
+        for obj in lista:
+            #status = "@" + twitter_user + " TEST " + message
+            #status = message 
+            status = obj['tuit'] + " cc @" + twitter_user
+            #status = message
+
+            #should we tuit this message?
+            to_tuit = lib.insert_to_db(status)
+            if to_tuit == "do_tuit":
+
+                #print status
+                payload = {
+                        'status': status,
+                        }
+                url = "https://api.twitter.com/1.1/statuses/update.json"
+
+                try:
+                    print "Tweet ", payload
+                    if debug == 0:
+                        r = requests.post(url=url, auth=oauth, params=payload)
+                        #print json.loads(r.text)['id_str']
+                        save_tuit(status)
+                except:
+                    print "Error"
 
 def create_database():
     filename = os.path.join(config.base_folder, "tuits.db")

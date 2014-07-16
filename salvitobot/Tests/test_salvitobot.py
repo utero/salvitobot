@@ -2,18 +2,23 @@
 import unittest
 
 from salvitobot.lib import DataExtractor
-
+from salvitobot.lib import tuit
 
 class SalvitoTest(unittest.TestCase):
 
     def test_data_extractor_magnitude(self):
-        json_file = "1405369502.25.json"
         magnitude = 5.5
         url = "http://aniversarioperu.me/salvitobot/1405371303.23.json"
         result = DataExtractor(url).get_items()
-        print result
         result = result[0]['magnitud']
         self.assertEqual(magnitude, result)
+
+    def test_tuit(self):
+        url = "http://aniversarioperu.me/salvitobot/1405371303.23.json"
+        lista = DataExtractor(url).get_items()
+        debug = 1
+        tuit(lista, debug)
+
 
 
 if __name__ == "__main__":
