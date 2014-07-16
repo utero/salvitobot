@@ -1,11 +1,18 @@
 #-*- coding: utf-8 -*-
+import codecs
+from datetime import datetime
+from datetime import timedelta as td
+import json
 import os
 import re
+import time
 
 import dataset
+import requests
 import sqlalchemy
 
 import config
+
 
 def create_database():
     filename = os.path.join(config.base_folder, "tuits.db")
@@ -66,10 +73,10 @@ class DataExtractor(object):
                 "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
             ]
 
-    def get_items(self, urls):
+    def get_items(self):
         sismos_peru = []
 
-        for url in urls:
+        for url in self.urls:
             r = requests.get(url)
             data = json.loads(r.text)
     
@@ -79,28 +86,32 @@ class DataExtractor(object):
             f.close()
     
             for i in data['features']:
-                obj = {}
                 place = i['properties']['place']
-                if "Peru" in place or "Chile" in place:
-                    date = datetime.fromtimestamp(int(i['properties']['time'])/1000).strftime('%H:%M:%S %d %b %Y')
-                    date_obj = datetime.strptime(date, '%H:%M:%S %d %b %Y') - td(hours=time_difference)
-                    date = date_obj.strftime('%H:%M') + " del " + date_obj.strftime('%d %b')
-        
-                    if i['properties']['type'] == 'earthquake':
-                        obj['type'] = "Sismo"
-                    elif i['properties']['type'] == 'quarry':
-                        obj['type'] = "Quarry"
-    
+                if "peru" in place.lower() or "chile" in place.lower():
+                    obj = {}
+                    obj['code'] = i['properties']['code']
                     obj['magnitud'] = i['properties']['mag']
                     obj['magnitud_type'] = i['properties']['magType']
-                    obj['place'] = i['properties']['place']
-                    obj['date'] = date
+
+                    # tz: timezone, number of minutes to correct from Epicenter
+                    # to UTC
+                    obj['tz'] = i['properties']['tz']
+
                     obj['link'] = i['properties']['url']
-    
-                    out = obj['type'].upper()
-                    out += ". " + str(obj['magnitud']) + " grados " + obj['magnitud_type']
-                    out += " en " + obj['place']
-                    out += ". A horas " + obj['date']
-                    out += " " + obj['link']
-                sismos_peru.append(out)
+                    obj['place'] = i['properties']['place']
+                    obj['time'] = i['properties']['time']
+                    obj['longitude'] = i['geometry']['coordinates'][0]
+                    obj['latitude'] = i['geometry']['coordinates'][1]
+                    # depth is in km
+                    obj['depth'] = i['geometry']['coordinates'][2]
+
+
+
+                    """
+                    date = datetime.fromtimestamp(int(i['properties']['time'])/1000).strftime('%H:%M:%S %d %b %Y')
+                    date_obj = datetime.strptime(date, '%H:%M:%S %d %b %Y') - td(hours=config.time_difference)
+                    date = date_obj.strftime('%H:%M') + " del " + date_obj.strftime('%d %b')
+                    obj['date'] = date
+                    """
+                    sismos_peru.append(obj)
         return sismos_peru
