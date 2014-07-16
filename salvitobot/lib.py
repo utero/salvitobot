@@ -55,19 +55,19 @@ def insert_to_db(tuit):
             return "dont_tuit"
 
 
-class DataExtractor:
+class DataExtractor(object):
 
     def __init__(self, url=None):
-        self.items = self.get_items
-
-    def get_items(self, urls):
-        sismos_peru = []
-
-        if url == None:
-            urls = [
+        if url:
+            self.urls = [url]
+        else:
+            self.urls = [
                 "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
                 "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
             ]
+
+    def get_items(self, urls):
+        sismos_peru = []
 
         for url in urls:
             r = requests.get(url)
@@ -80,7 +80,8 @@ class DataExtractor:
     
             for i in data['features']:
                 obj = {}
-                if "Peru" in i['properties']['place'] or "Chile" in i['properties']['place']:
+                place = i['properties']['place']
+                if "Peru" in place or "Chile" in place:
                     date = datetime.fromtimestamp(int(i['properties']['time'])/1000).strftime('%H:%M:%S %d %b %Y')
                     date_obj = datetime.strptime(date, '%H:%M:%S %d %b %Y') - td(hours=time_difference)
                     date = date_obj.strftime('%H:%M') + " del " + date_obj.strftime('%d %b')
