@@ -53,7 +53,8 @@ def get_tsunami_feed():
                 out += ". Precaución de tsunami para PERU "
             out += "reportado a las " + str(pubdate) + " "
             out += i.link
-            tsunamis.append(out)
+            obj['tuit'] = out
+            tsunamis.append(obj)
     return tsunamis
 
 def save_tuit(message):
@@ -72,10 +73,10 @@ def tuit(lista):
             ]
     for twitter_user in users:
         # send mention
-        for message in lista:
+        for obj in lista:
             #status = "@" + twitter_user + " TEST " + message
             #status = message 
-            status = message + " cc @" + twitter_user
+            status = obj['tuit'] + " cc @" + twitter_user
             #status = message
 
             #should we tuit this message?
