@@ -1,8 +1,8 @@
-#-*- coding: utf-8 -*-
 import unittest
 
 from salvitobot.lib import DataExtractor
 from salvitobot.lib import tuit
+
 
 class SalvitoTest(unittest.TestCase):
 
@@ -20,7 +20,6 @@ class SalvitoTest(unittest.TestCase):
         tuit(lista, debug)
 
 
-
 if __name__ == "__main__":
-    runner = unittest.TextTestRunner(verbosity = 2)
+    runner = unittest.TextTestRunner(verbosity=2)
     unittest.main(testRunner=runner)
