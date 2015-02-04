@@ -42,3 +42,6 @@ territorio peruano o chileno.
 las autoridades se ponen las pilas e instalan un servicio parecido al que
 tienen en Chile. Por mientras, hacemos lo que está dentro de nuestras
 posibilidades para ayudar.
+
+# Requisitos
+* Python3.4
