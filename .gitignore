@@ -2,11 +2,14 @@ build
 *db
 cron.log
 config*
+dist
 .*swp
 *pyc
 .*#
 *txt
 *xml
 *json
+*egg
+*egg-info
 
 .idea
