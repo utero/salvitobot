@@ -11,7 +11,7 @@ import requests
 import sqlalchemy
 
 import config
-from salvitobot import api
+import api
 
 
 def tuit(lista, debug):

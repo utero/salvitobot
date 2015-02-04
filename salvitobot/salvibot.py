@@ -1,18 +1,10 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from datetime import datetime
 from datetime import timedelta as td
 import re
-import sys
-import json
 
 import feedparser
-import requests
 
-import config
-import salvitobot.api as api
-from salvitobot.lib import DataExtractor
+from mib import DataExtractor
 
 
 def get_tsunami_feed():
@@ -23,7 +15,7 @@ def get_tsunami_feed():
     tsunamis = []
 
     url = "http://ptwc.weather.gov/feeds/ptwc_rss_pacific.xml"
-    #url = r"rss.txt"
+    # url = r"rss.txt"
     d = feedparser.parse(url)
     for i in d.entries:
         description = i.description.replace("\n", " ")
@@ -56,31 +48,32 @@ def get_tsunami_feed():
             tsunamis.append(obj)
     return tsunamis
 
+
 def save_tuit(message):
     lib.create_database()
     lib.insert_to_db(message)
 
 
-
 def main():
     debug = 0
 
-    #time_difference between the server time and Lima
+    # time_difference between the server time and Lima
     time_difference = 1
 
-    print "Buscando tsunamis"
+    print("Buscando tsunamis")
     tsunamis = get_tsunami_feed()
-    #print json.dumps(tsunamis, indent=4)
+    # print json.dumps(tsunamis, indent=4)
 
-    print "Buscando sismos"
+    print("Buscando sismos")
     extractor = DataExtractor()
     sismos = extractor.get_items()
-    #print json.dumps(sismos, indent=4)
+    # print json.dumps(sismos, indent=4)
 
     if len(sismos) > 0:
         tuit(sismos, debug)
     if len(tsunamis) > 0:
         tuit(tsunamis, debug)
+
 
 if __name__ == "__main__":
     main()
