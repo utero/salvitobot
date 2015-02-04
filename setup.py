@@ -1,29 +1,26 @@
-#-*- coding: utf-8 -*-
-from distutils.core import setup
+import setuptools
 
 
-setup(
-    name='salvitobot',
-    version='0.0.1',
+setuptools.setup(
+    name="salvitobot",
+    version="0.1.0",
     url="https://github.com/aniversarioperu/salvitobot",
+
     author="AniversarioPeru",
-    author_email="aniversarioperu1@gmail.com",
-    maintainer="AniversarioPeru",
+    author_email="aniversarioperu1@gmail.com", maintainer="AniversarioPeru",
     maintainer_email="aniversarioperu1@gmail.com",
-    contact="AniversarioPeru",
-    contact_email="aniversarioperu1@gmail.com",
-    license="GPL v3",
-    description="be a salvitobot",
-    long_description=open('README.md').read(),
-    platforms="any",
-    download_url="",
+
+    description="avisa sismos y tsunamis",
+    long_description=open('README.rst').read(),
+
+    packages=setuptools.find_packages(),
+
+    install_requires=[],
+
     classifiers=[
-        "Programming Language :: Python",
-        ("Topic :: Scientific/Engineering :: Bio-Informatics"),
-        ("Intended Audience :: Science/Research"),
-        ("License :: OSI Approved :: GNU General Public License v3 (GPLv3)"),
-        ("Operating System :: OS Independent"),
-        ("Environment :: Console"),
+        'Development Status :: 2 - Pre-Alpha',
+        'Programming Language :: Python',
+
+        'Programming Language :: Python :: 3.4',
     ],
-    packages=['salvitobot'],
 )
