@@ -1,7 +1,28 @@
-import setuptools
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 
-setuptools.setup(
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+
+
+with open('README.rst') as readme_file:
+    readme = readme_file.read()
+
+with open('HISTORY.rst') as history_file:
+    history = history_file.read().replace('.. :changelog:', '')
+
+requirements = [
+    # TODO: put package requirements here
+]
+
+test_requirements = [
+    # TODO: put package test requirements here
+]
+
+setup(
     name="salvitobot",
     version="0.1.0",
     url="https://github.com/aniversarioperu/salvitobot",
@@ -13,9 +34,13 @@ setuptools.setup(
     description="avisa sismos y tsunamis",
     long_description=open('README.rst').read(),
 
-    packages=setuptools.find_packages(),
-
-    install_requires=[],
+    packages=[
+        'salvitobot',
+    ],
+    package_dir={'salvitobot':
+                 'salvitobot'},
+    include_package_data=True,
+    install_requires=requirements,
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -24,5 +49,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3.4',
     ],
     test_suite='tests',
-    test_requirements='requirements/testing.txt',
+    tests_require=test_requirements,
 )

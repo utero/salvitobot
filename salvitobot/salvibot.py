@@ -4,7 +4,7 @@ import re
 
 import feedparser
 
-from mib import DataExtractor
+from lib import DataExtractor
 
 
 def get_tsunami_feed():
