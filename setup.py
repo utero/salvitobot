@@ -24,4 +24,5 @@ setuptools.setup(
         'Programming Language :: Python :: 3.4',
     ],
     test_suite='tests',
+    test_requirements='requirements/testing.txt',
 )
