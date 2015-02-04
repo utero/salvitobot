@@ -7,8 +7,8 @@ import config
 
 wp = Client('http://utero.pe/xmlrpc.php', config.username, config.password)
 for k, v in enumerate(wp.call(GetPosts())):
-    print k, unicode(v).encode("utf-8")
-print wp.call(GetUserInfo())
+    print(k, unicode(v).encode("utf-8"))
+print(wp.call(GetUserInfo()))
 
 
 from wordpress_xmlrpc import WordPressPost
