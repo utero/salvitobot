@@ -3,6 +3,8 @@ build
 cron.log
 config*
 dist
+.coverage
+htmlcov
 .*swp
 *pyc
 .*#
