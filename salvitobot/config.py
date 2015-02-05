@@ -11,10 +11,10 @@ if os.path.isfile(SECRETS_FILE):
         secrets = json.loads(f.read())
 else:
     secrets = {
-        'key': '',
-        'secret': '',
-        'token': '',
-        'token_secret': '',
+        'twitter_key': '',
+        'twitter_secret': '',
+        'twitter_token': '',
+        'twitter_token_secret': '',
     }
 
 
@@ -26,9 +26,9 @@ def get_secret(setting, secrets=secrets):
         print(error_msg)
         sys.exit()
 
-key = get_secret('key')
-secret = get_secret('secret')
-token = get_secret('token')
-token_secret = get_secret('token_secret')
+key = get_secret('twitter_key')
+secret = get_secret('twitter_secret')
+token = get_secret('twitter_token')
+token_secret = get_secret('twitter_token_secret')
 
 base_folder = os.path.dirname(__file__)
