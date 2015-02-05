@@ -6,6 +6,9 @@
    :target: https://travis-ci.org/aniversarioperu/salvitobot
    :alt: Latest Travis CI build status
 
+En construcción!
+================
+
 SalvitoBot
 ==========
 
