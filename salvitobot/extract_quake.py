@@ -4,7 +4,8 @@ import argparse
 from argparse import RawTextHelpFormatter
 import codecs
 import sys
-import config
+
+from . import config
 
 
 def extract(time_difference):
