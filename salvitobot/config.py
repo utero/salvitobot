@@ -6,8 +6,16 @@ import sys
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRETS_FILE = os.path.join(BASE_DIR, 'config.json')
 
-with open(SECRETS_FILE) as f:
-    secrets = json.loads(f.read())
+if os.path.isfile(SECRETS_FILE):
+    with open(SECRETS_FILE) as f:
+        secrets = json.loads(f.read())
+else:
+    secrets = {
+        'key': '',
+        'secret': '',
+        'token': '',
+        'token_secret': '',
+    }
 
 
 def get_secret(setting, secrets=secrets):
