@@ -14,5 +14,7 @@ htmlcov
 *egg-info
 
 docs/_build
+docs/salvitobot.rst
+docs/modules.rst
 
 .idea
