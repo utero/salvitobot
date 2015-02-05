@@ -8,7 +8,6 @@ htmlcov
 .*swp
 *pyc
 .*#
-*txt
 *xml
 *json
 *egg
