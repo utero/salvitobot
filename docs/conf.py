@@ -23,13 +23,15 @@ import os
 #sys.path.insert(0, os.path.abspath('.'))
 
 # Get the project root dir, which is the parent dir of this
-cwd = os.getcwd()
-project_root = os.path.dirname(cwd)
-
 # Insert the project root dir as the first element in the PYTHONPATH.
 # This lets us ensure that the source package is imported, and that its
 # version is used.
-sys.path.insert(0, project_root)
+cwd = os.getcwd()
+parent = os.path.dirname(cwd)
+sys.path.append(os.path.abspath(parent))
+sys.path.append(os.path.abspath(os.path.join(parent, 'salvitobot')))
+sys.path.append(os.path.abspath('_themes'))
+
 
 import salvitobot
 
@@ -56,7 +58,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Python Salvitobot'
-copyright = u'2014, Audrey Roy'
+copyright = u'2015, AniversarioPeru'
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
@@ -109,17 +111,18 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output -------------------------------------------
 
+# Add any paths that contain custom themes here, relative to this directory.
+html_theme_path = ['_themes']
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'kr'
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
 
-# Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
