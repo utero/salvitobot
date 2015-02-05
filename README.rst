@@ -1,7 +1,3 @@
-.. image:: https://pypip.in/v/salvitobot/badge.png
-    :target: https://pypi.python.org/pypi/salvitobot
-    :alt: Latest PyPI version
-
 .. image:: https://travis-ci.org/aniversarioperu/salvitobot.svg?branch=master
    :target: https://travis-ci.org/aniversarioperu/salvitobot
    :alt: Latest Travis CI build status
