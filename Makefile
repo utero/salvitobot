@@ -10,6 +10,7 @@ help:
 	@echo "test-all - run tests on every Python version with tox"
 	@echo "coverage - check code coverage quickly with the default Python"
 	@echo "docs - generate Sphinx HTML documentation, including API docs"
+	@echo "doc-test - check code in docstrings and documentation"
 	@echo "release - package and upload a release"
 	@echo "dist - package"
 	@echo "install - install the package to the active Python's site-packages"
@@ -56,6 +57,9 @@ docs:
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
+
+doc-test:
+	nosetests --verbosity 2 --with-doctest --doctest-extension=rst docs salvitobot
 
 release: clean
 	python setup.py sdist upload
