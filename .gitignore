@@ -1,7 +1,7 @@
 build
 *db
 cron.log
-config*
+config.json
 dist
 .coverage
 htmlcov
