@@ -63,16 +63,17 @@ def create_database(test=None):
 
     """
     if test is None:
-        filename = os.path.join(config.base_folder, "tuits.db")
+        filename = os.path.join(config.base_folder, "salvitobot.db")
     else:
-        filename = os.path.join(config.base_folder, "tuits_test.db")
+        filename = os.path.join(config.base_folder, "salvitobot_test.db")
 
     if not os.path.isfile(filename):
         db = dataset.connect('sqlite:///' + filename)
-        table = db.create_table("tuits")
+        table = db.create_table("salvitobot")
         table.create_column('code', sqlalchemy.String)  # unique identifier of earthquake
         table.create_column('url', sqlalchemy.String)
-        table.create_column('tuit', sqlalchemy.String)
+        table.create_column('tweet', sqlalchemy.String)
+        table.create_column('blogpost', sqlalchemy.Text)
         table.create_column('twitter_user', sqlalchemy.String)
     else:
         db = dataset.connect('sqlite:///' + filename)

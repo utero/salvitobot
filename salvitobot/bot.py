@@ -4,8 +4,6 @@ import re
 
 import feedparser
 
-from .api import DataExtractor
-
 
 def get_tsunami_feed():
     warning = False
@@ -65,7 +63,6 @@ def main():
     # print json.dumps(tsunamis, indent=4)
 
     print("Buscando sismos")
-    extractor = DataExtractor()
     sismos = extractor.get_items()
     # print json.dumps(sismos, indent=4)
 

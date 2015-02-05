@@ -58,12 +58,18 @@ class TestUtils(unittest.TestCase):
     def test_get_quake_no_country(self):
         self.assertRaises(NoCountryError, self.bot.get_quake, self.data1)
 
+    def test_is_new_quake(self):
+        self.bot.get_quake(my_dict=self.data1, country='Venezuela')
+        expected = True
+        result = self.bot.is_new_quake()
+        self.assertEqual(expected, result)
+
     def test_create_db(self):
         utils.create_database(test=True)
-        result = os.path.isfile(os.path.join(config.base_folder, "tuits_test.db"))
+        result = os.path.isfile(os.path.join(config.base_folder, "salvitobot_test.db"))
         self.assertTrue(result)
 
     def tearDown(self):
-        file = os.path.join(config.base_folder, "tuits_test.db")
+        file = os.path.join(config.base_folder, "salvitobot_test.db")
         if os.path.isfile(file):
             os.remove(file)

@@ -14,6 +14,7 @@ from . import config
 from . import _oauth
 from . import utils
 from .exceptions import NoCountryError
+from .exceptions import ProcedureError
 
 
 class Bot(object):
@@ -21,9 +22,16 @@ class Bot(object):
 
     This is the only contact point with users.
 
+    Attrs:
+        ``quake``: list of quake objects fetched from web service.
+        ``quakes_to_write``: list of quakes that are new to our database and
+                             and need to be tweeted or written about.
+        ``urls``: sources to fetch data on quakes.
+
     """
     def __init__(self):
         self.quake = None
+        self.quakes_to_write = []
         self.urls = [
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
@@ -66,7 +74,48 @@ class Bot(object):
 
         :return: ``True`` or ``False``
         """
-        pass
+        db = utils.create_database()
+        if self.quake is None:
+            # get quake function has not been called
+            raise ProcedureError("You need to call the function .get_quake(country='MyCountry') first")
+        else:
+            table = db['salvitobot']
+            for item in self.quake:
+                if table.find_one(code=item['code']) is None:
+                    self.quakes_to_write.append(item)
+
+            if len(self.quakes_to_write) > 0:
+                return True
+            else:
+                return False
+
+
+def a():
+    # line is a line of downloaded data
+    match = re.search("(http://.+)", tuit)
+    user = re.search("(@\w+)", tuit)
+
+    item = dict()
+    item['url'] = match.groups()[0]
+    item['tuit'] = tuit
+    if user:
+        item['twitter_user'] = user.groups()[0]
+
+        if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
+            print("DO TUIT: %s" % str(item['tuit']))
+            table.insert(item)
+            return "do_tuit"
+        else:
+            print("DONT TUIT: %s" % str(item['tuit']))
+            return "dont_tuit"
+    else:
+        if not table.find_one(url=item['url']):
+            print("DO TUIT: %s" % str(item['tuit']))
+            table.insert(item)
+            return "do_tuit"
+        else:
+            print("DONT TUIT: %s" % str(item['tuit']))
+            return "dont_tuit"
 
 
 def tuit(lista, debug):
@@ -103,37 +152,3 @@ def tuit(lista, debug):
                         save_tuit(status)
                 except:
                     print("Error")
-
-
-def insert_to_db(tuit):
-    import sys
-    import dataset
-    filename = os.path.join(config.base_folder, "tuits.db")
-    db = dataset.connect("sqlite:///" + filename)
-    table = db['tuits']
-
-    # line is a line of downloaded data
-    match = re.search("(http://.+)", tuit)
-    user = re.search("(@\w+)", tuit)
-
-    item = dict()
-    item['url'] = match.groups()[0]
-    item['tuit'] = tuit
-    if user:
-        item['twitter_user'] = user.groups()[0]
-
-        if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
-            print("DO TUIT: %s" % str(item['tuit']))
-            table.insert(item)
-            return "do_tuit"
-        else:
-            print("DONT TUIT: %s" % str(item['tuit']))
-            return "dont_tuit"
-    else:
-        if not table.find_one(url=item['url']):
-            print("DO TUIT: %s" % str(item['tuit']))
-            table.insert(item)
-            return "do_tuit"
-        else:
-            print("DONT TUIT: %s" % str(item['tuit']))
-            return "dont_tuit"
