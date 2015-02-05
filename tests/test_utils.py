@@ -7,6 +7,7 @@ import pytz
 
 from salvitobot import utils
 import salvitobot
+from salvitobot.exceptions import NoCountryError
 
 
 class TestUtils(unittest.TestCase):
@@ -37,3 +38,6 @@ class TestUtils(unittest.TestCase):
         result = self.bot.quake
         expected = 1
         self.assertEqual(expected, len(result))
+
+    def test_get_quake_no_country(self):
+        self.assertRaises(NoCountryError, self.bot.get_quake, self.data1)

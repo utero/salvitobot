@@ -13,6 +13,7 @@ import sqlalchemy
 from . import config
 from . import _oauth
 from . import utils
+from .exceptions import NoCountryError
 
 
 class Bot(object):
@@ -34,8 +35,15 @@ class Bot(object):
         Args:
             ``my_dict``: optional, dictionary based on json object from the web
                          service.
+            ``country``: required, country to get earthquakes for.
+
+        Raises:
+            ``NoCountryError``: if no country is specified for this method.
 
         """
+        if country is None:
+            raise NoCountryError('You need to specify one country to get earthquakes for.')
+
         if my_dict is not None:
             self.quake = utils.parse_quake_data(my_dict, country=country)
         else:

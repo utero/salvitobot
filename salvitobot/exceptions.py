@@ -1,0 +1,2 @@
+class NoCountryError(Exception):
+    pass
