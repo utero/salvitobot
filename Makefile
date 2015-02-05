@@ -38,17 +38,15 @@ clean-test:
 lint:
 	flake8 salvitobot tests
 
-test:
+test: clean-test
 	coverage run --source salvitobot setup.py test
 
 test-all:
 	tox
 
-coverage:
-	coverage run --source salvitobot setup.py test
+coverage: test
 	coverage report -m
 	coverage html
-	open htmlcov/index.html
 
 docs:
 	rm -f docs/salvitobot.rst
