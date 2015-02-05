@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+                    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+                    xmlns:georss="http://www.georss.org/georss">
+ <channel>
+  <title>PTWC - Pacific Ocean Bulletins</title>
+  <link>http://ptwc.weather.gov/?region=1</link>
+  <atom:link href="http://ptwc.weather.gov/feeds/ptwc_rss_pacific.xml" rel="self" type="application/rss+xml" />
+  <description>Tsunami warnings and information for Pacific Ocean countries</description>
+  <language>en-us</language>
+  <managingEditor>ptwc@ptwc.noaa.gov (PTWC)</managingEditor>
+  <webMaster>ptwc@ptwc.noaa.gov (PTWC Webmaster)</webMaster>
+  <image>
+   <url>http://weather.gov/images/xml_logo.gif</url>
+   <title>PTWC - Pacific Ocean Bulletins</title>
+   <link>http://ptwc.weather.gov/?region=1</link>
+  </image>
+  <lastBuildDate>23 Jan 2015 04:04:34 GMT</lastBuildDate>
+<item>
+<title>Ptwc Tsunami Information Statement</title>
+<pubDate>23 Jan 2015 04:04:34 GMT</pubDate>
+<link>http://ptwc.weather.gov/?region=1&amp;id=pacific.TIBPAC.2015.01.23.0404</link>
+<guid isPermaLink="false">pacific.TIBPAC.2015.01.23.0404</guid>
+<author>ptwc@ptwc.noaa.gov (PTWC)</author>
+<category>information</category>
+<geo:lat>-17</geo:lat>
+<geo:long>168.6</geo:long>
+<georss:point>-17 168.6</georss:point>
+<georss:radius>6.9</georss:radius>
+<georss:featurename></georss:featurename>
+<description><![CDATA[<pre>
+000
+WEPA42 PHEB 230404
+TIBPAC
+
+TSUNAMI INFORMATION STATEMENT NUMBER 2
+NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI
+0402 UTC FRI JAN 23 2015
+
+...PTWC TSUNAMI INFORMATION STATEMENT...
+
+
+**** NOTICE **** NOTICE **** NOTICE **** NOTICE **** NOTICE *****
+
+ THIS STATEMENT IS ISSUED FOR INFORMATION ONLY IN SUPPORT OF THE
+ UNESCO/IOC PACIFIC TSUNAMI WARNING AND MITIGATION SYSTEM AND IS
+ MEANT FOR NATIONAL AUTHORITIES IN EACH COUNTRY OF THAT SYSTEM.
+
+ NATIONAL AUTHORITIES WILL DETERMINE THE APPROPRIATE LEVEL OF
+ ALERT FOR EACH COUNTRY AND MAY ISSUE ADDITIONAL OR MORE REFINED
+ INFORMATION.
+
+**** NOTICE **** NOTICE **** NOTICE **** NOTICE **** NOTICE *****
+
+NOTE CHANGE IN EARTHQUAKE DEPTH.
+
+PRELIMINARY EARTHQUAKE PARAMETERS
+---------------------------------
+
+  * MAGNITUDE      6.9
+  * ORIGIN TIME    0347 UTC JAN 23 2015
+  * COORDINATES    17.0 SOUTH  168.6 EAST
+  * DEPTH          200 KM / 124 MILES
+  * LOCATION       VANUATU
+
+
+EVALUATION
+----------
+
+  * AN EARTHQUAKE WITH A PRELIMINARY MAGNITUDE OF 6.9 OCCURRED IN
+    THE VANUATU ISLANDS AT 0347 UTC ON FRIDAY JANUARY 23 2015.
+
+  * BASED ON ALL AVAILABLE DATA... THERE IS NO TSUNAMI THREAT
+    FROM THIS EARTHQUAKE.
+
+
+RECOMMENDED ACTIONS
+-------------------
+
+  * NO ACTION IS REQUIRED.
+
+
+NEXT UPDATE AND ADDITIONAL INFORMATION
+--------------------------------------
+
+  * THIS WILL BE THE ONLY STATEMENT ISSUED FOR THIS EVENT UNLESS
+    ADDITIONAL DATA ARE RECEIVED OR THE SITUATION CHANGES.
+
+  * AUTHORITATIVE INFORMATION ABOUT THE EARTHQUAKE FROM THE U.S.
+    GEOLOGICAL SURVEY CAN BE FOUND ON THE INTERNET AT
+    EARTHQUAKE.USGS.GOV/EARTHQUAKES -ALL LOWER CASE-.
+
+  * FURTHER INFORMATION ABOUT THIS EVENT MAY BE FOUND AT
+    PTWC.WEATHER.GOV AND AT WWW.TSUNAMI.GOV.
+
+  * COASTAL REGIONS OF HAWAII... AMERICAN SAMOA... GUAM... AND
+    CNMI SHOULD REFER TO PACIFIC TSUNAMI WARNING CENTER MESSAGES
+    SPECIFICALLY FOR THOSE PLACES THAT CAN BE FOUND AT
+    PTWC.WEATHER.GOV.
+
+  * COASTAL REGIONS OF CALIFORNIA... OREGON... WASHINGTON...
+    BRITISH COLUMBIA AND ALASKA SHOULD ONLY REFER TO U.S. NATIONAL
+    TSUNAMI WARNING CENTER MESSAGES THAT CAN BE FOUND AT
+    NTWC.ARH.NOAA.GOV.
+
+$$
+
+</pre>]]></description>
+</item></channel>
+</rss>
