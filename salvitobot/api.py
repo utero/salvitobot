@@ -1,64 +1,142 @@
-# -*- encoding: utf-8 -*-
-from __future__ import unicode_literals
+import codecs
+from datetime import datetime
+from datetime import timedelta as td
+import json
+import os
+import re
+import time
+
+import dataset
 import requests
-from requests_oauthlib import OAuth1
-from urllib.parse import parse_qs
-import config
+import sqlalchemy
 
-REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
-AUTHORIZE_URL = "https://api.twitter.com/oauth/authorize?oauth_token="
-ACCESS_TOKEN_URL = "https://api.twitter.com/oauth/access_token"
-
-CONSUMER_KEY = config.key
-CONSUMER_SECRET = config.secret
-
-OAUTH_TOKEN = config.token
-OAUTH_TOKEN_SECRET = config.token_secret
+from . import config
+from . import _oauth
 
 
-def setup_oauth():
-    """Authorize your app via identifier."""
-    # Request token
-    oauth = OAuth1(CONSUMER_KEY, client_secret=CONSUMER_SECRET)
-    r = requests.post(url=REQUEST_TOKEN_URL, auth=oauth)
-    credentials = parse_qs(r.content)
+class Bot(object):
+    """Main class for Salvitobot.
 
-    resource_owner_key = credentials.get('oauth_token')[0]
-    resource_owner_secret = credentials.get('oauth_token_secret')[0]
+    This is the only contact point with users.
 
-    # Authorize
-    authorize_url = AUTHORIZE_URL + resource_owner_key
-    print('Please go here and authorize: ' + authorize_url)
+    """
+    def __init__(self):
+        self.quake = None
+        self.urls = [
+            "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
+            "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
+        ]
 
-    verifier = raw_input('Please input the verifier: ')
-    oauth = OAuth1(CONSUMER_KEY,
-                   client_secret=CONSUMER_SECRET,
-                   resource_owner_key=resource_owner_key,
-                   resource_owner_secret=resource_owner_secret,
-                   verifier=verifier)
+    def get_quake(self, my_dict=None):
+        """Gets quake info from given dict, or the web.
 
-    # Finally, Obtain the Access Token
-    r = requests.post(url=ACCESS_TOKEN_URL, auth=oauth)
-    credentials = parse_qs(r.content)
-    token = credentials.get('oauth_token')[0]
-    secret = credentials.get('oauth_token_secret')[0]
+        Args:
+            ``my_dict``: optional, dictionary based on json object from the web
+                         service.
 
-    return token, secret
+        """
+        if my_dict is not None:
+            self.quake = "hola"
+
+        sismos_peru = []
+        for url in self.urls:
+            r = requests.get(url)
+            data = json.loads(r.text)
+
+            filename = os.path.join(config.base_folder, str(time.time()) + ".json")
+            f = codecs.open(filename, "w", "utf-8")
+            f.write(json.dumps(data, indent=4))
+            f.close()
+
+            parsed_data = self.parse_quake_data(data)
+            sismos_peru.append(parsed_data)
+        self.quake = sismos_peru
 
 
-def get_oauth():
-    _oauth = OAuth1(
-        CONSUMER_KEY,
-        client_secret=CONSUMER_SECRET,
-        resource_owner_key=OAUTH_TOKEN,
-        resource_owner_secret=OAUTH_TOKEN_SECRET,
-    )
-    return _oauth
 
-if __name__ == "__main__":
-    if not OAUTH_TOKEN:
-        token, secret = setup_oauth()
+
+
+def tuit(lista, debug):
+    # print lista
+    oauth = api.get_oauth()
+
+    users = [
+        # 'manubellido',
+        # 'aniversarioperu',
+        'indeciperu',
+        # 'ernestocabralm',
+    ]
+    for twitter_user in users:
+        # send mention
+        for obj in lista:
+            # status = "@" + twitter_user + " TEST " + message
+            # status = message
+            status = obj['tuit'] + " cc @" + twitter_user
+            # status = message
+
+            # should we tuit this message?
+            to_tuit = lib.insert_to_db(status)
+            if to_tuit == "do_tuit":
+
+                # print status
+                payload = {'status': status}
+                url = "https://api.twitter.com/1.1/statuses/update.json"
+
+                try:
+                    print("Tweet ", payload)
+                    if debug == 0:
+                        r = requests.post(url=url, auth=oauth, params=payload)
+                        # print json.loads(r.text)['id_str']
+                        save_tuit(status)
+                except:
+                    print("Error")
+
+
+def create_database():
+    filename = os.path.join(config.base_folder, "tuits.db")
+    if not os.path.isfile(filename):
+        try:
+            print("Creating database")
+            db = dataset.connect('sqlite:///' + filename)
+            table = db.create_table("tuits")
+            table.create_column('url', sqlalchemy.String)
+            table.create_column('tuit', sqlalchemy.String)
+            table.create_column('twitter_user', sqlalchemy.String)
+        except:
+            pass
+
+
+def insert_to_db(tuit):
+    import sys
+    import dataset
+    filename = os.path.join(config.base_folder, "tuits.db")
+    db = dataset.connect("sqlite:///" + filename)
+    table = db['tuits']
+
+    # line is a line of downloaded data
+    match = re.search("(http://.+)", tuit)
+    user = re.search("(@\w+)", tuit)
+
+    item = dict()
+    item['url'] = match.groups()[0]
+    item['tuit'] = tuit
+    if user:
+        item['twitter_user'] = user.groups()[0]
+
+        if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
+            print("DO TUIT: %s" % str(item['tuit']))
+            table.insert(item)
+            return "do_tuit"
+        else:
+            print("DONT TUIT: %s" % str(item['tuit']))
+            return "dont_tuit"
     else:
-        oauth = get_oauth()
-        r = requests.get(url="https://api.twitter.com/1.1/statuses/mentions_timeline.json", auth=oauth)
-        print(r.json())
+        if not table.find_one(url=item['url']):
+            print("DO TUIT: %s" % str(item['tuit']))
+            table.insert(item)
+            return "do_tuit"
+        else:
+            print("DONT TUIT: %s" % str(item['tuit']))
+            return "dont_tuit"
+
+

@@ -3,7 +3,7 @@ from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import GetPosts, NewPost
 from wordpress_xmlrpc.methods.users import GetUserInfo
 
-import config
+from . import config
 
 """
 wp = Client('http://utero.pe/xmlrpc.php', config.username, config.password)

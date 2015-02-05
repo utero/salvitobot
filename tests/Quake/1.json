@@ -1,0 +1,381 @@
+{
+    "metadata": {
+        "title": "USGS Magnitude 4.5+ Earthquakes, Past Day",
+        "generated": 1423120976000,
+        "status": 200,
+        "count": 11,
+        "url": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
+        "api": "1.0.17"
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    -72.0767,
+                    8.2514,
+                    10
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tluz",
+            "properties": {
+                "title": "M 5.0 - 2km SW of Umuquena, Venezuela",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tluz",
+                "mmi": null,
+                "ids": ",usc000tluz,",
+                "nst": null,
+                "cdi": 3.4,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tluz.geojson",
+                "magType": "mb",
+                "updated": 1423117964062,
+                "sig": 385,
+                "mag": 5,
+                "status": "reviewed",
+                "time": 1423114737770,
+                "code": "c000tluz",
+                "tsunami": 0,
+                "types": ",cap,dyfi,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 1.559,
+                "gap": 39,
+                "alert": null,
+                "type": "earthquake",
+                "place": "2km SW of Umuquena, Venezuela",
+                "felt": 1,
+                "tz": -270,
+                "rms": 1.3,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    -82.6517,
+                    5.2204,
+                    10
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tlun",
+            "properties": {
+                "title": "M 5.7 - South of Panama",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tlun",
+                "mmi": 3,
+                "ids": ",usc000tlun,",
+                "nst": null,
+                "cdi": 1,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tlun.geojson",
+                "magType": "mww",
+                "updated": 1423118823782,
+                "sig": 500,
+                "mag": 5.7,
+                "status": "reviewed",
+                "time": 1423111253570,
+                "code": "c000tlun",
+                "tsunami": 0,
+                "types": ",cap,dyfi,general-link,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 4.812,
+                "gap": 68,
+                "alert": "green",
+                "type": "earthquake",
+                "place": "South of Panama",
+                "felt": 0,
+                "tz": -360,
+                "rms": 0.89,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    160.4897,
+                    52.8608,
+                    43.29
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tlpx",
+            "properties": {
+                "title": "M 4.7 - 125km E of Petropavlovsk-Kamchatskiy, Russia",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tlpx",
+                "mmi": null,
+                "ids": ",usc000tlpx,",
+                "nst": null,
+                "cdi": null,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tlpx.geojson",
+                "magType": "mb",
+                "updated": 1423107268866,
+                "sig": 340,
+                "mag": 4.7,
+                "status": "reviewed",
+                "time": 1423078322220,
+                "code": "c000tlpx",
+                "tsunami": 0,
+                "types": ",cap,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 1.125,
+                "gap": 147,
+                "alert": null,
+                "type": "earthquake",
+                "place": "125km E of Petropavlovsk-Kamchatskiy, Russia",
+                "felt": null,
+                "tz": 660,
+                "rms": 1.24,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    124.9869,
+                    -0.1641,
+                    48.51
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tlkz",
+            "properties": {
+                "title": "M 5.2 - 117km SE of Modayag, Indonesia",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tlkz",
+                "mmi": null,
+                "ids": ",usc000tlkz,",
+                "nst": null,
+                "cdi": null,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tlkz.geojson",
+                "magType": "mb",
+                "updated": 1423100668737,
+                "sig": 416,
+                "mag": 5.2,
+                "status": "reviewed",
+                "time": 1423071703910,
+                "code": "c000tlkz",
+                "tsunami": 0,
+                "types": ",cap,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 2.38,
+                "gap": 42,
+                "alert": null,
+                "type": "earthquake",
+                "place": "117km SE of Modayag, Indonesia",
+                "felt": null,
+                "tz": 480,
+                "rms": 0.94,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    -179.7233,
+                    -23.7461,
+                    516.26
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tljf",
+            "properties": {
+                "title": "M 4.6 - South of the Fiji Islands",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tljf",
+                "mmi": null,
+                "ids": ",usc000tljf,",
+                "nst": null,
+                "cdi": null,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tljf.geojson",
+                "magType": "mb",
+                "updated": 1423103841551,
+                "sig": 326,
+                "mag": 4.6,
+                "status": "reviewed",
+                "time": 1423066542060,
+                "code": "c000tljf",
+                "tsunami": 0,
+                "types": ",cap,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 6.323,
+                "gap": 113,
+                "alert": null,
+                "type": "earthquake",
+                "place": "South of the Fiji Islands",
+                "felt": null,
+                "tz": -720,
+                "rms": 1.21,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    146.8249,
+                    -6.3293,
+                    73.88
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tljd",
+            "properties": {
+                "title": "M 4.5 - 46km NNW of Lae, Papua New Guinea",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tljd",
+                "mmi": null,
+                "ids": ",usc000tljd,",
+                "nst": null,
+                "cdi": null,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tljd.geojson",
+                "magType": "mb",
+                "updated": 1423103313166,
+                "sig": 312,
+                "mag": 4.5,
+                "status": "reviewed",
+                "time": 1423066450190,
+                "code": "c000tljd",
+                "tsunami": 0,
+                "types": ",cap,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 3.073,
+                "gap": 101,
+                "alert": null,
+                "type": "earthquake",
+                "place": "46km NNW of Lae, Papua New Guinea",
+                "felt": null,
+                "tz": 600,
+                "rms": 0.96,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    112.9906,
+                    -6.1623,
+                    588.53
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tlh7",
+            "properties": {
+                "title": "M 4.6 - 96km NNE of Krajan Pangkah Kulon, Indonesia",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tlh7",
+                "mmi": null,
+                "ids": ",usc000tlh7,",
+                "nst": null,
+                "cdi": null,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tlh7.geojson",
+                "magType": "mb",
+                "updated": 1423083572910,
+                "sig": 326,
+                "mag": 4.6,
+                "status": "reviewed",
+                "time": 1423054610930,
+                "code": "c000tlh7",
+                "tsunami": 0,
+                "types": ",cap,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 2.566,
+                "gap": 55,
+                "alert": null,
+                "type": "earthquake",
+                "place": "96km NNE of Krajan Pangkah Kulon, Indonesia",
+                "felt": null,
+                "tz": 480,
+                "rms": 0.95,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    83.4345,
+                    32.8326,
+                    10
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tlgv",
+            "properties": {
+                "title": "M 5.1 - 95km NW of Luring, China",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tlgv",
+                "mmi": null,
+                "ids": ",usc000tlgv,",
+                "nst": null,
+                "cdi": null,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tlgv.geojson",
+                "magType": "mb",
+                "updated": 1423075616330,
+                "sig": 400,
+                "mag": 5.1,
+                "status": "reviewed",
+                "time": 1423046656920,
+                "code": "c000tlgv",
+                "tsunami": 0,
+                "types": ",cap,general-link,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 10.318,
+                "gap": 49,
+                "alert": null,
+                "type": "earthquake",
+                "place": "95km NW of Luring, China",
+                "felt": null,
+                "tz": 480,
+                "rms": 1.04,
+                "sources": ",us,"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "coordinates": [
+                    -175.9448,
+                    -25.878,
+                    28.86
+                ],
+                "type": "Point"
+            },
+            "id": "usc000tlgc",
+            "properties": {
+                "title": "M 5.4 - South of Tonga",
+                "net": "us",
+                "url": "http://earthquake.usgs.gov/earthquakes/eventpage/usc000tlgc",
+                "mmi": null,
+                "ids": ",usc000tlgc,gcmt20150204082044,",
+                "nst": null,
+                "cdi": null,
+                "detail": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/usc000tlgc.geojson",
+                "magType": "mb",
+                "updated": 1423066992578,
+                "sig": 449,
+                "mag": 5.4,
+                "status": "reviewed",
+                "time": 1423038044600,
+                "code": "c000tlgc",
+                "tsunami": 0,
+                "types": ",cap,general-link,geoserve,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+                "dmin": 9.825,
+                "gap": 116,
+                "alert": null,
+                "type": "earthquake",
+                "place": "South of Tonga",
+                "felt": null,
+                "tz": -720,
+                "rms": 1.32,
+                "sources": ",us,gcmt,"
+            }
+        }
+    ],
+    "type": "FeatureCollection",
+    "bbox": [
+        -179.7233,
+        -25.878,
+        8,
+        160.4897,
+        52.8608,
+        588.53
+    ]
+}

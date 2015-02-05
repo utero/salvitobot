@@ -15,11 +15,20 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 requirements = [
-    # TODO: put package requirements here
+    'dataset',
+    'python-wordpress-xmlrpc',
+    'requests',
+    'feedparser',
+    'requests_oauthlib',
+    'pytz',
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    'pep8',
+    'coverage',
+    'nose',
+    'Sphinx',
+    'coveralls',
 ]
 
 setup(
