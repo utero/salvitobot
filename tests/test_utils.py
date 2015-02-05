@@ -39,5 +39,20 @@ class TestUtils(unittest.TestCase):
         expected = 1
         self.assertEqual(expected, len(result))
 
+    def test_get_quake_strange_country(self):
+        self.bot.get_quake(my_dict=self.data1, country='Vulcan')
+        result = self.bot.quake
+        expected = 0
+        self.assertEqual(expected, len(result))
+
+    def test_get_quake_from_web(self):
+        self.bot.urls = [
+            'http://pastebin.com/raw.php?i=0WuxsixK',
+        ]
+        self.bot.get_quake(country='Venezuela')
+        result = self.bot.quake
+        expected = 1
+        self.assertEqual(expected, len(result))
+
     def test_get_quake_no_country(self):
         self.assertRaises(NoCountryError, self.bot.get_quake, self.data1)
