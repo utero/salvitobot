@@ -69,15 +69,15 @@ Configuración
 Renombrar el archivo ``config.json.bak`` a ``config.json`` y agregar constraseñas
 y claves secretas:
 
-```javascript
-{
-  "twitter_key": "",
-  "twitter_secret": "",
-  "twitter_token": "",
-  "twitter_token_secret": "",
-  "wordpress_username": "salvitobot",
-  "wordpress_password": ""
-}
-```
+.. code:: javascript
+
+    {
+        "twitter_key": "",
+        "twitter_secret": "",
+        "twitter_token": "",
+        "twitter_token_secret": "",
+        "wordpress_username": "salvitobot",
+        "wordpress_password": ""
+    }
 
 `salvitobot` was written by `AniversarioPeru <aniversarioperu1@gmail.com>`_.
