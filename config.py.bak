@@ -3,3 +3,9 @@ key = ""
 secret = ""
 token = ""
 token_secret = ""
+
+base_folder = os.path.dirname(__file__)
+
+# Wordpress credentials. Needed so Salvitobot can write posts
+username = "salvitobot"
+password = "

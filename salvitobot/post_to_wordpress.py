@@ -5,6 +5,7 @@ from wordpress_xmlrpc.methods.users import GetUserInfo
 
 import config
 
+"""
 wp = Client('http://utero.pe/xmlrpc.php', config.username, config.password)
 for k, v in enumerate(wp.call(GetPosts())):
     print(k, unicode(v).encode("utf-8"))
@@ -22,3 +23,4 @@ post.id = wp.call(posts.NewPost(post))
 # whoops, I forgot to publish it!
 post.post_status = 'publish'
 wp.call(posts.EditPost(post.id, post))
+"""
