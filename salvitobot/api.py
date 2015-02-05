@@ -12,6 +12,7 @@ import sqlalchemy
 
 from . import config
 from . import _oauth
+from . import utils
 
 
 class Bot(object):
@@ -27,7 +28,7 @@ class Bot(object):
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
         ]
 
-    def get_quake(self, my_dict=None):
+    def get_quake(self, my_dict=None, country=None):
         """Gets quake info from given dict, or the web.
 
         Args:
@@ -48,12 +49,9 @@ class Bot(object):
             f.write(json.dumps(data, indent=4))
             f.close()
 
-            parsed_data = self.parse_quake_data(data)
+            parsed_data = utils.parse_quake_data(data, country=country)
             sismos_peru.append(parsed_data)
         self.quake = sismos_peru
-
-
-
 
 
 def tuit(lista, debug):
@@ -138,5 +136,3 @@ def insert_to_db(tuit):
         else:
             print("DONT TUIT: %s" % str(item['tuit']))
             return "dont_tuit"
-
-

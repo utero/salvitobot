@@ -20,3 +20,12 @@ class TestUtils(unittest.TestCase):
 
         expected = datetime.datetime(2015, 2, 5, 5, 38, 57, 769999, tzinfo=pytz.utc)
         self.assertEqual(expected, result[0]['datetime_utc'])
+
+    def test_parse_quake_data_several_quakes(self):
+        with open(os.path.join(self.cwd, 'Quake', '2.json'), 'r') as handle:
+            data = json.loads(handle.read())
+
+        result = utils.parse_quake_data(data, 'Venezuela')
+
+        expected = datetime.datetime(2015, 2, 5, 5, 38, 57, 769999, tzinfo=pytz.utc)
+        self.assertEqual(expected, result[0]['datetime_utc'])
