@@ -14,4 +14,6 @@ htmlcov
 *egg
 *egg-info
 
+docs/_build
+
 .idea
