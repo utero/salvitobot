@@ -2,6 +2,8 @@ import datetime
 from datetime import timedelta as td
 import re
 
+from .wordpress import post_to_wp
+
 
 class Writer(object):
     """Writes blog posts and uploads to Wordpress.
@@ -94,4 +96,7 @@ class Writer(object):
             text = re.sub('_epicenter_', epicenter, text)
             text = re.sub('_time_', time, text)
             text = re.sub('_depth_', depth, text)
-            print(text)
+
+            title = 'Temblor gado ' + magnitude_integer + ' en ' + epicenter
+            post_to_wp(title, text)
+            print("Published post with title %s" % title)
