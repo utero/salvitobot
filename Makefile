@@ -38,7 +38,7 @@ lint:
 	flake8 salvitobot tests
 
 test:
-	python setup.py test
+	coverage run --source salvitobot setup.py test
 
 test-all:
 	tox

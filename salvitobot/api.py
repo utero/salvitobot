@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 import requests
 from requests_oauthlib import OAuth1
 from urllib.parse import parse_qs
-
 import config
 
 REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
