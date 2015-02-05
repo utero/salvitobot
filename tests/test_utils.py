@@ -5,8 +5,9 @@ import json
 
 import pytz
 
-from salvitobot import utils
 import salvitobot
+from salvitobot import config
+from salvitobot import utils
 from salvitobot.exceptions import NoCountryError
 
 
@@ -56,3 +57,13 @@ class TestUtils(unittest.TestCase):
 
     def test_get_quake_no_country(self):
         self.assertRaises(NoCountryError, self.bot.get_quake, self.data1)
+
+    def test_create_db(self):
+        utils.create_database(test=True)
+        result = os.path.isfile(os.path.join(config.base_folder, "tuits_test.db"))
+        self.assertTrue(result)
+
+    def tearDown(self):
+        file = os.path.join(config.base_folder, "tuits_test.db")
+        if os.path.isfile(file):
+            os.remove(file)

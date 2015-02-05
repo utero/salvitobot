@@ -11,6 +11,6 @@ To use Python Salvitobot in a project::
     >>> bot = salvitobot.Bot()
     >>> bot.get_quake(country='Peru')  # find earthquake records for Peru
 
-    >>> if bot.quake is not None and bot.is_new_quake is True:
+    >>> if len(bot.quake) > 0 and bot.is_new_quake() is True:
     ...     bot.tweet()
     ...     bot.write_post()

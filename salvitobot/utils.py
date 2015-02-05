@@ -1,6 +1,11 @@
 import datetime
+import os
 
+import dataset
 import pytz
+import sqlalchemy
+
+from . import config
 
 
 def parse_quake_data(data, country):
@@ -47,3 +52,29 @@ def parse_quake_data(data, country):
             obj['tuit'] = out
             quakes.append(obj)
     return quakes
+
+
+def create_database(test=None):
+    """
+    Creates a sqlite3 database if not exists.
+
+    :test: optional, creates database for testing only
+    :return: database handle using ``dataset``
+
+    """
+    if test is None:
+        filename = os.path.join(config.base_folder, "tuits.db")
+    else:
+        filename = os.path.join(config.base_folder, "tuits_test.db")
+
+    if not os.path.isfile(filename):
+        db = dataset.connect('sqlite:///' + filename)
+        table = db.create_table("tuits")
+        table.create_column('code', sqlalchemy.String)  # unique identifier of earthquake
+        table.create_column('url', sqlalchemy.String)
+        table.create_column('tuit', sqlalchemy.String)
+        table.create_column('twitter_user', sqlalchemy.String)
+    else:
+        db = dataset.connect('sqlite:///' + filename)
+
+    return db

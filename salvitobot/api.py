@@ -61,6 +61,13 @@ class Bot(object):
                 sismos_peru += parsed_data
             self.quake = sismos_peru
 
+    def is_new_quake(self):
+        """
+
+        :return: ``True`` or ``False``
+        """
+        pass
+
 
 def tuit(lista, debug):
     # print lista
@@ -96,20 +103,6 @@ def tuit(lista, debug):
                         save_tuit(status)
                 except:
                     print("Error")
-
-
-def create_database():
-    filename = os.path.join(config.base_folder, "tuits.db")
-    if not os.path.isfile(filename):
-        try:
-            print("Creating database")
-            db = dataset.connect('sqlite:///' + filename)
-            table = db.create_table("tuits")
-            table.create_column('url', sqlalchemy.String)
-            table.create_column('tuit', sqlalchemy.String)
-            table.create_column('twitter_user', sqlalchemy.String)
-        except:
-            pass
 
 
 def insert_to_db(tuit):
