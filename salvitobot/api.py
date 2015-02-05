@@ -37,21 +37,21 @@ class Bot(object):
 
         """
         if my_dict is not None:
-            self.quake = "hola"
+            self.quake = utils.parse_quake_data(my_dict, country=country)
+        else:
+            sismos_peru = []
+            for url in self.urls:
+                r = requests.get(url)
+                data = json.loads(r.text)
 
-        sismos_peru = []
-        for url in self.urls:
-            r = requests.get(url)
-            data = json.loads(r.text)
+                filename = os.path.join(config.base_folder, str(time.time()) + ".json")
+                f = codecs.open(filename, "w", "utf-8")
+                f.write(json.dumps(data, indent=4))
+                f.close()
 
-            filename = os.path.join(config.base_folder, str(time.time()) + ".json")
-            f = codecs.open(filename, "w", "utf-8")
-            f.write(json.dumps(data, indent=4))
-            f.close()
-
-            parsed_data = utils.parse_quake_data(data, country=country)
-            sismos_peru.append(parsed_data)
-        self.quake = sismos_peru
+                parsed_data = utils.parse_quake_data(data, country=country)
+                sismos_peru += parsed_data
+            self.quake = sismos_peru
 
 
 def tuit(lista, debug):
