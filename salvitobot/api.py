@@ -89,6 +89,17 @@ class Bot(object):
             else:
                 return False
 
+    def write_post(self):
+        if self.quake is None:
+            # get quake function has not been called
+            raise ProcedureError("You need to call the function .get_quake(country='MyCountry') first")
+        else:
+            if len(self.quakes_to_write) < 1:
+                print("Nothing to do.")
+            else:
+                blogger = Writer(self.quakes_to_write)
+                blogger.write_post()
+
 
 def a():
     # line is a line of downloaded data
