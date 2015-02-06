@@ -20,6 +20,7 @@ requirements = [
     'feedparser',
     'requests_oauthlib',
     'pytz',
+    'arrow',
 ]
 
 test_requirements = [
@@ -32,7 +33,7 @@ test_requirements = [
 
 setup(
     name="salvitobot",
-    version="0.1.1",
+    version="0.1.2",
     url="https://github.com/aniversarioperu/salvitobot",
 
     author="AniversarioPeru",

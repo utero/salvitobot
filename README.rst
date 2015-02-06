@@ -63,6 +63,13 @@ Requisitos
 
 -  Python3.4
 
+Instalación
+===========
+
+::
+
+    pip install salvitobot
+
 
 Configuración
 =============
@@ -80,5 +87,12 @@ y claves secretas:
         "wordpress_username": "salvitobot",
         "wordpress_password": ""
     }
+
+Uso
+===
+
+.. include:: docs/usage.rst
+
+Lee la documentación completa aquí: http://salvitobot.readthedocs.org/en/latest/
 
 `salvitobot` was written by `AniversarioPeru <aniversarioperu1@gmail.com>`_.
