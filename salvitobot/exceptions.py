@@ -4,3 +4,7 @@ class NoCountryError(Exception):
 
 class ProcedureError(Exception):
     pass
+
+
+class ToPublishPostError(Exception):
+    pass
