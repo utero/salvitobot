@@ -13,6 +13,7 @@ import sqlalchemy
 from . import config
 from . import _oauth
 from . import utils
+from .writer import Writer
 from .exceptions import NoCountryError
 from .exceptions import ProcedureError
 
@@ -92,7 +93,15 @@ class Bot(object):
             else:
                 return False
 
-    def write_post(self):
+    def write_post(self, publish=None):
+        """
+        Write post for new quakes and publish in Wordpress.
+
+        :param publish: True or False
+        :return: text of post
+
+        """
+        print(self._quakes_to_write)
         if self.quake is None:
             # get quake function has not been called
             raise ProcedureError("You need to call the function .get_quake(country='MyCountry') first")
@@ -100,8 +109,8 @@ class Bot(object):
             if len(self._quakes_to_write) < 1:
                 print("Nothing to do.")
             else:
-                blogger = Writer(self._quakes_to_write)
-                blogger.write_post()
+                blogger = Writer()
+                blogger.write_post(self._quakes_to_write, publish)
 
 
 def a():

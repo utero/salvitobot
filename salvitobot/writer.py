@@ -63,9 +63,9 @@ fue elaborado por un algoritmo escrito por el autor.
             date_local = item['datetime_utc'] + td(minutes=item['tz'])
             a = arrow.get(date_local)
             date_local_str = a.format('DD MMM, YYYY', locale='es_es')
-            # date_local_str = datetime.datetime.strftime(date_local, '%d %b, %Y')
 
             hour_of_day = int(datetime.datetime.strftime(date_local, '%H'))
+            print(hour_of_day)
             if 6 <= hour_of_day < 12:
                 time_of_day1 = 'mañana'
             elif 12 <= hour_of_day < 18:
@@ -80,6 +80,7 @@ fue elaborado por un algoritmo escrito por el autor.
             epicenter = item['place']
 
             time = datetime.datetime.strftime(item['datetime_utc'], '%H:%M')
+            hour_of_day = int(datetime.datetime.strftime(item['datetime_utc'], '%H'))
             if 6 <= hour_of_day < 12:
                 time_of_day2 = 'mañana'
             elif 12 <= hour_of_day < 18:
