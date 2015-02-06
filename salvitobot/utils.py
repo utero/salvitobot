@@ -35,7 +35,7 @@ def parse_quake_data(data, country):
             obj['type'] = i['properties']['type']
 
             obj['link'] = i['properties']['url']
-            obj['place'] = i['properties']['place']
+            obj['place'] = translate_string(i['properties']['place'])
             obj['time'] = i['properties']['time']
             obj['longitude'] = i['geometry']['coordinates'][0]
             obj['latitude'] = i['geometry']['coordinates'][1]
@@ -80,3 +80,15 @@ def create_database(test=None):
         db = dataset.connect('sqlite:///' + filename)
 
     return db
+
+
+def translate_string(this_string):
+    """
+    Do silly translation.
+
+    :param this_string:
+    :return: esta_cuerda
+
+    """
+    this_string = this_string.replace(' of ', ' de ')
+    return this_string
