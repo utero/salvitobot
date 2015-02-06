@@ -6,12 +6,9 @@ import os
 import re
 import time
 
-import dataset
 import requests
-import sqlalchemy
 
 from . import config
-from . import _oauth
 from . import utils
 from .writer import Writer
 from .exceptions import NoCountryError
@@ -78,10 +75,16 @@ class Bot(object):
 
         :return: ``True`` or ``False``
         """
+        # Reset quakes to write
+        self._quakes_to_write = []
+
         db = utils.create_database()
         if self.quake is None:
             # get quake function has not been called
             raise ProcedureError("You need to call the function .get_quake(country='MyCountry') first")
+        elif self.quake == []:
+            print("No results were found.")
+            return False
         else:
             table = db['salvitobot']
             for item in self.quake:
@@ -101,7 +104,6 @@ class Bot(object):
         :return: text of post
 
         """
-        print(self._quakes_to_write)
         if self.quake is None:
             # get quake function has not been called
             raise ProcedureError("You need to call the function .get_quake(country='MyCountry') first")

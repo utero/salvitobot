@@ -8,3 +8,7 @@ class ProcedureError(Exception):
 
 class ToPublishPostError(Exception):
     pass
+
+
+class WordPressNotConfigured(Exception):
+    pass

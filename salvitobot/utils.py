@@ -92,3 +92,18 @@ def translate_string(this_string):
     """
     this_string = this_string.replace(' of ', ' de ')
     return this_string
+
+
+def save_to_db(item):
+    """
+    Saves quake item to local sqlite3 database.
+
+    :param item:
+
+    """
+    db = create_database()
+    table = db['salvitobot']
+    row = table.find_one(code=item['code'])
+
+    if row is None:
+        table.insert(item)
