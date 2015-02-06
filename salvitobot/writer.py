@@ -4,6 +4,7 @@ import re
 
 import arrow
 
+from .utils import save_to_db
 from .wordpress import post_to_wp
 from .exceptions import ToPublishPostError
 
@@ -13,25 +14,19 @@ class Writer(object):
 
     """
     def __init__(self):
-        self.template = """\nUn _tremor_ de _magnitude_level_ magnitud de _magnitude_integer_ grados tuvo
-lugar el _date_local_str_ por la _time_of_day1_ a _epicenter_
-según el Servicio Geológico de EE.UU.
-El _tremor_ se produjo a las _time_ de la _time_of_day2_,
-del Tiempo universal coordinado (UTC), a una profundidad de
-_depth_ kilómetros.
-
-Según el USGS, el epicentro se ubicó a _related_place_.
-"""
-        self.positive_historial_template = """
-            En los últimos _days_ días, se han registrado _how_many_ temblores de magnitud 3.0
-            o mayores en esta zona.
-            """
-        self.negative_historial_template = """En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
-zona.
-"""
-        self.template_footer = """La información proviene del USGS Earthquake Notification Service. Este post
-fue elaborado por un algoritmo escrito por el autor.
-"""
+        self.template = "Un _tremor_ de _magnitude_level_ magnitud de _magnitude_integer_ " \
+                        "grados tuvo lugar el _date_local_str_ por la _time_of_day1_ a " \
+                        "_epicenter_ según el Servicio Geológico de EE.UU. \n" \
+                        "El _tremor_ se produjo a las _time_ de la _time_of_day2_, " \
+                        "del Tiempo universal coordinado (UTC), a una profundidad de " \
+                        "_depth_ kilómetros. \n\n " \
+                        "Según el USGS, el epicentro se ubicó a _related_place_."
+        self.positive_historial_template = "En los últimos _days_ días, se han registrado " \
+                                           "_how_many_ temblores de magnitud 3.0 o mayores en esta zona."
+        self.negative_historial_template = "En los últimos _days_ días, no se registraron temblores de" \
+                                           "magnitud 3.0 o mayores en esta zona."
+        self.template_footer = "La información proviene del USGS Earthquake Notification Service. Este post " \
+                               "fue elaborado por un algoritmo escrito por el autor."
 
     def write_post(self, items, publish=None):
         """
@@ -94,7 +89,9 @@ fue elaborado por un algoritmo escrito por el autor.
 
             depth = str(item['depth'])
 
-            text = self.template + "\n" + self.negative_historial_template + "\n"
+            text = self.template + "\n"
+            # text += self.negative_historial_template + "\n"
+            # TODO get historial from our database
             text += self.template_footer
 
             text = re.sub('_tremor_', tremor, text)
@@ -107,10 +104,11 @@ fue elaborado por un algoritmo escrito por el autor.
             text = re.sub('_time_', time, text)
             text = re.sub('_depth_', depth, text)
 
-            title = 'Temblor gado ' + magnitude_integer + ' en ' + epicenter
+            title = 'Temblor grado ' + magnitude_integer + ' en ' + epicenter
 
             if publish is True:
                 post_to_wp(title, text)
+                save_to_db(item)
                 print("Published post with title %s" % title)
 
             if publish is False:
