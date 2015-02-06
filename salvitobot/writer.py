@@ -39,9 +39,8 @@ fue elaborado por un algoritmo escrito por el autor.
         :param items: list of earthquake data (as dictionaries)
         :param publish: required, True or False to send to Wordpress
 
-        Raises:
-            Error if user does not specify to publish this post or not. Use
-            ``publish=True`` or ``publish=False``.
+        :raises ToPublishPostError: Error if user does not specify to publish this post or not. Use
+                                    ``publish=True`` or ``publish=False``.
 
         """
         if publish is None and publish is not True and publish is not False:
