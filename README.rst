@@ -16,7 +16,7 @@ tsunamis.
 Funcionamiento
 ==============
 
-Este bot, [@SalvitoBot](https://twitter.com/salvitobot), se activa
+Este bot, `@SalvitoBot <https://twitter.com/salvitobot>`_, se activa
 automáticamente cada 5 minutos y extrae información en *real-time* sobre
 **sismos** y **tsunamis** de estas dos fuentes:
 
@@ -39,7 +39,7 @@ estará alerta y activo día y noche, de madrugada, todos los días (no
 solo en horario de oficina).
 
 Hemos configurado para que @SalvitoBot emita los tuits con *mention* a
-la cuenta de [@IndeciPeru](https://twitter.com/indeciperu) para que
+la cuenta de `@IndeciPeru <https://twitter.com/indeciperu>`_ para que
 puedan alertar al resto de tuiteros y la información se propague más
 rápido.
 
