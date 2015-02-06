@@ -76,6 +76,7 @@ y claves secretas:
         "twitter_secret": "",
         "twitter_token": "",
         "twitter_token_secret": "",
+        "wordpress_client": "https://mydomain.wordpress.com/xmlrpc.php",
         "wordpress_username": "salvitobot",
         "wordpress_password": ""
     }
