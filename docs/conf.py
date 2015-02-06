@@ -26,11 +26,9 @@ import os
 # Insert the project root dir as the first element in the PYTHONPATH.
 # This lets us ensure that the source package is imported, and that its
 # version is used.
-cwd = os.getcwd()
-parent = os.path.dirname(cwd)
-sys.path.append(os.path.abspath(parent))
-sys.path.append(os.path.abspath(os.path.join(parent, 'salvitobot')))
+sys.path.insert(0, os.path.abspath('..'))
 sys.path.append(os.path.abspath('_themes'))
+
 
 
 import salvitobot

@@ -13,6 +13,7 @@ def parse_quake_data(data, country):
 
     Args:
         ``data``: dict object as downloaded from web service.
+
         ``country``: string, country to look for earthquake for
 
     Returns:

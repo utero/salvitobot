@@ -24,8 +24,10 @@ class Bot(object):
 
     Attrs:
         ``quake``: list of quake objects fetched from web service.
+
         ``quakes_to_write``: list of quakes that are new to our database and
                              and need to be tweeted or written about.
+
         ``urls``: sources to fetch data on quakes.
 
     """
@@ -43,6 +45,7 @@ class Bot(object):
         Args:
             ``my_dict``: optional, dictionary based on json object from the web
                          service.
+
             ``country``: required, country to get earthquakes for.
 
         Raises:
