@@ -33,7 +33,7 @@ class Bot(object):
     """
     def __init__(self):
         self.quake = None
-        self.quakes_to_write = []
+        self._quakes_to_write = []
         self.urls = [
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
@@ -85,9 +85,9 @@ class Bot(object):
             table = db['salvitobot']
             for item in self.quake:
                 if table.find_one(code=item['code']) is None:
-                    self.quakes_to_write.append(item)
+                    self._quakes_to_write.append(item)
 
-            if len(self.quakes_to_write) > 0:
+            if len(self._quakes_to_write) > 0:
                 return True
             else:
                 return False
@@ -97,10 +97,10 @@ class Bot(object):
             # get quake function has not been called
             raise ProcedureError("You need to call the function .get_quake(country='MyCountry') first")
         else:
-            if len(self.quakes_to_write) < 1:
+            if len(self._quakes_to_write) < 1:
                 print("Nothing to do.")
             else:
-                blogger = Writer(self.quakes_to_write)
+                blogger = Writer(self._quakes_to_write)
                 blogger.write_post()
 
 
