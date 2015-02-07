@@ -110,9 +110,10 @@ class Writer(object):
             title = 'Temblor grado ' + magnitude_integer + ' en ' + epicenter
 
             if publish is True:
-                post_url = post_to_wp(title, text)
+                post_url = post_to_wp(title, text, item['datetime_local'])
                 save_to_db(item)
                 print("Published post with title %s" % title)
+                return post_url
 
             if publish is False:
                 print(text)

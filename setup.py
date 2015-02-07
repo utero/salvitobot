@@ -21,6 +21,7 @@ requirements = [
     'requests_oauthlib',
     'pytz',
     'arrow',
+    'slugify',
 ]
 
 test_requirements = [

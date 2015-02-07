@@ -32,6 +32,7 @@ class Bot(object):
     def __init__(self):
         self.quake = None
         self._quakes_to_write = []
+        self.post_url = []
         self.urls = [
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
@@ -112,7 +113,8 @@ class Bot(object):
                 print("Nothing to do.")
             else:
                 blogger = Writer()
-                blogger.write_post(self._quakes_to_write, publish)
+                post_url = blogger.write_post(self._quakes_to_write, publish)
+                self.post_url.append(post_url)
 
 
 def a():

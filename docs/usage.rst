@@ -54,3 +54,12 @@ Ya que es nuevo, escribe un post pero no lo publiques aún::
     La información proviene del USGS Earthquake Notification Service. Este post
     fue elaborado por un algoritmo escrito por el autor.
     <BLANKLINE>
+
+Publica el post en tu instalación de WordPress::
+
+    >>> bot.write_post(publish=True)
+
+Salvitobot intentará adiviar el URL de tu post::
+
+    >>> bot.post_url
+    ['https://example.wordpress.com/2015/02/06/blah-blah/']
