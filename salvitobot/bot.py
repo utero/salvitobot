@@ -1,19 +1,8 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from datetime import datetime
 from datetime import timedelta as td
 import re
-import sys
-import json
 
 import feedparser
-import requests
-
-import config
-import api
-import extract_quake
-import lib
 
 
 def get_tsunami_feed():
@@ -24,7 +13,7 @@ def get_tsunami_feed():
     tsunamis = []
 
     url = "http://ptwc.weather.gov/feeds/ptwc_rss_pacific.xml"
-    #url = r"rss.txt"
+    # url = r"rss.txt"
     d = feedparser.parse(url)
     for i in d.entries:
         description = i.description.replace("\n", " ")
@@ -53,64 +42,35 @@ def get_tsunami_feed():
                 out += ". Precaución de tsunami para PERU "
             out += "reportado a las " + str(pubdate) + " "
             out += i.link
-            tsunamis.append(out)
+            obj['tuit'] = out
+            tsunamis.append(obj)
     return tsunamis
+
 
 def save_tuit(message):
     lib.create_database()
     lib.insert_to_db(message)
 
-def tuit(lista):
-    #print lista
-    oauth = api.get_oauth()
-
-    users = [
-            #'manubellido',
-            #'aniversarioperu',
-            'indeciperu',
-            #'ernestocabralm'
-            ]
-    for twitter_user in users:
-        # send mention
-        for message in lista:
-            #status = "@" + twitter_user + " TEST " + message
-            #status = message 
-            status = message + " cc @" + twitter_user
-            #status = message
-
-            #should we tuit this message?
-            to_tuit = lib.insert_to_db(status)
-            if to_tuit == "do_tuit":
-
-                #print status
-                payload = {
-                        'status': status,
-                        }
-                url = "https://api.twitter.com/1.1/statuses/update.json"
-
-                try:
-                    r = requests.post(url=url, auth=oauth, params=payload)
-                    #print json.loads(r.text)['id_str']
-                    save_tuit(status)
-                except:
-                    print "Error"
 
 def main():
-    #time_difference between the server time and Lima
+    debug = 0
+
+    # time_difference between the server time and Lima
     time_difference = 1
 
-    print "Buscando tsunamis"
+    print("Buscando tsunamis")
     tsunamis = get_tsunami_feed()
-    #print json.dumps(tsunamis, indent=4)
+    # print json.dumps(tsunamis, indent=4)
 
-    print "Buscando sismos"
-    sismos = extract_quake.extract(time_difference)
-    #print json.dumps(sismos, indent=4)
+    print("Buscando sismos")
+    sismos = extractor.get_items()
+    # print json.dumps(sismos, indent=4)
 
     if len(sismos) > 0:
-        tuit(sismos)
+        tuit(sismos, debug)
     if len(tsunamis) > 0:
-        tuit(tsunamis)
+        tuit(tsunamis, debug)
+
 
 if __name__ == "__main__":
     main()

@@ -2,9 +2,9 @@
 from __future__ import unicode_literals
 import requests
 from requests_oauthlib import OAuth1
-from urlparse import parse_qs
+from urllib.parse import parse_qs
+from . import config
 
-import config
 
 REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
 AUTHORIZE_URL = "https://api.twitter.com/oauth/authorize?oauth_token="
@@ -14,7 +14,7 @@ CONSUMER_KEY = config.key
 CONSUMER_SECRET = config.secret
 
 OAUTH_TOKEN = config.token
-OAUTH_TOKEN_SECRET = config.token_secret 
+OAUTH_TOKEN_SECRET = config.token_secret
 
 
 def setup_oauth():
@@ -29,7 +29,7 @@ def setup_oauth():
 
     # Authorize
     authorize_url = AUTHORIZE_URL + resource_owner_key
-    print 'Please go here and authorize: ' + authorize_url
+    print('Please go here and authorize: ' + authorize_url)
 
     verifier = raw_input('Please input the verifier: ')
     oauth = OAuth1(CONSUMER_KEY,
@@ -48,11 +48,13 @@ def setup_oauth():
 
 
 def get_oauth():
-    oauth = OAuth1(CONSUMER_KEY,
-                client_secret=CONSUMER_SECRET,
-                resource_owner_key=OAUTH_TOKEN,
-                resource_owner_secret=OAUTH_TOKEN_SECRET)
-    return oauth
+    _oauth = OAuth1(
+        CONSUMER_KEY,
+        client_secret=CONSUMER_SECRET,
+        resource_owner_key=OAUTH_TOKEN,
+        resource_owner_secret=OAUTH_TOKEN_SECRET,
+    )
+    return _oauth
 
 if __name__ == "__main__":
     if not OAUTH_TOKEN:
@@ -60,4 +62,4 @@ if __name__ == "__main__":
     else:
         oauth = get_oauth()
         r = requests.get(url="https://api.twitter.com/1.1/statuses/mentions_timeline.json", auth=oauth)
-        print r.json()
+        print(r.json())
