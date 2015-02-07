@@ -98,14 +98,14 @@ def translate_string(this_string):
     return this_string
 
 
-def save_to_db(item):
+def save_to_db(item, test=None):
     """
     Saves quake item to local sqlite3 database.
 
     :param item:
 
     """
-    db = create_database()
+    db = create_database(test)
     table = db['salvitobot']
     row = table.find_one(code=item['code'])
 
