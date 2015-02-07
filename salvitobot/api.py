@@ -70,7 +70,7 @@ class Bot(object):
                 sismos_peru += parsed_data
             self.quake = sismos_peru
 
-    def is_new_quake(self):
+    def is_new_quake(self, test=None):
         """
 
         :return: ``True`` or ``False``
@@ -78,7 +78,7 @@ class Bot(object):
         # Reset quakes to write
         self._quakes_to_write = []
 
-        db = utils.create_database()
+        db = utils.create_database(test)
         if self.quake is None:
             # get quake function has not been called
             raise ProcedureError("You need to call the function .get_quake(country='MyCountry') first")
