@@ -5,6 +5,7 @@ import re
 import arrow
 
 from .utils import save_to_db
+from .utils import extract_nearby_cities
 from .wordpress import post_to_wp
 from .exceptions import ToPublishPostError
 
@@ -20,7 +21,7 @@ class Writer(object):
                         "El _tremor_ se produjo a las _time_ de la _time_of_day2_, " \
                         "del Tiempo universal coordinado (UTC), a una profundidad de " \
                         "_depth_ kilómetros. \n\n " \
-                        "Según el USGS, el epicentro se ubicó a _related_place_."
+                        "Según el USGS, el epicentro se ubicó _nearby_cities_.\n"
         self.positive_historial_template = "En los últimos _days_ días, se han registrado " \
                                            "_how_many_ temblores de magnitud 3.0 o mayores en esta zona."
         self.negative_historial_template = "En los últimos _days_ días, no se registraron temblores de" \
@@ -42,6 +43,8 @@ class Writer(object):
             raise ToPublishPostError("You need to specify to publish or not this post: publish=False")
 
         for item in items:
+            nearby_cities = extract_nearby_cities(item)
+
             if item['magnitude'] > 7.5:
                 tremor = 'terremoto'
             else:
@@ -94,6 +97,7 @@ class Writer(object):
             # TODO get historial from our database
             text += self.template_footer
 
+            text = re.sub('_nearby_cities_', nearby_cities, text)
             text = re.sub('_tremor_', tremor, text)
             text = re.sub('_magnitude_level_', magnitude_level, text)
             text = re.sub('_magnitude_integer_', magnitude_integer, text)

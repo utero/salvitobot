@@ -69,6 +69,12 @@ class TestUtils(unittest.TestCase):
         result = os.path.isfile(os.path.join(config.base_folder, "salvitobot_test.db"))
         self.assertTrue(result)
 
+    def test_extract_nearby_cities(self):
+        self.bot.get_quake(my_dict=self.data1, country='Venezuela')
+        result = utils.extract_nearby_cities(self.bot.quake[0])
+        expected = "a 2 km al SW de Umuquena, a 18 km al E de La Fria, a 31 km al NE de San Juan de Colon, y a 38 km al ESE de Puerto Santander, Colombia"
+        self.assertEqual(expected, result)
+
     def tearDown(self):
         file = os.path.join(config.base_folder, "salvitobot_test.db")
         if os.path.isfile(file):
