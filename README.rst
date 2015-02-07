@@ -99,7 +99,9 @@ y claves secretas:
 Uso
 ===
 
-Encuentra sismos recientes para Perú::
+Encuentra sismos recientes para Perú:
+
+.. code:: python
 
     >>> import salvitobot
     >>> bot = salvitobot.Bot()
@@ -107,7 +109,9 @@ Encuentra sismos recientes para Perú::
     >>> bot.quake
     []
 
-Encuentra sismos recientes para Venezuela::
+Encuentra sismos recientes para Venezuela:
+
+.. code:: python
 
     >>> bot.get_quake(country='Venezuela')
     >>> bot.quake
@@ -125,12 +129,16 @@ Encuentra sismos recientes para Venezuela::
     'code': 'c000tmka',
     'latitude': 11.0419}]]
 
-Averigua si este sismo es nuevo y no está en la base de datos::
+Averigua si este sismo es nuevo y no está en la base de datos:
+
+.. code:: python
 
     >>> bot.is_new_quake()
     True
 
-Ya que es nuevo, escribe un post pero no lo publiques aún::
+Ya que es nuevo, escribe un post pero no lo publiques aún:
+
+.. code:: python
 
     >>> bot.write_post(publish=False)
     <BLANKLINE>
