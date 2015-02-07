@@ -28,7 +28,8 @@ class Writer(object):
                                            "magnitud 3.0 o mayores en esta zona."
         self.template_footer = "La información proviene del Servicio de Notificación del Servicio Geológico " \
                                "estadounidense. Este texto " \
-                               "fue elaborado por un algoritmo escrito por @AniversarioPeru."
+                               "fue elaborado por un algoritmo escrito por " \
+                               "<a href='https://twitter.com/AniversarioPeru'>@AniversarioPeru</a>."
 
     def write_post(self, items, publish=None):
         """
