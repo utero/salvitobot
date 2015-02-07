@@ -1,9 +1,11 @@
 import datetime
 import os
+import re
 
 import dataset
 import pytz
 import sqlalchemy
+import requests
 
 from . import config
 
@@ -26,6 +28,8 @@ def parse_quake_data(data, country):
         place = i['properties']['place']
         if country in place.lower():
             obj = dict()
+            obj['country'] = country
+            obj['detail'] = i['properties']['detail']
             obj['code'] = i['properties']['code']
             obj['magnitude'] = i['properties']['mag']
             obj['magnitude_type'] = i['properties']['magType']
@@ -107,3 +111,24 @@ def save_to_db(item):
 
     if row is None:
         table.insert(item)
+
+
+def extract_nearby_cities(item):
+    res = requests.get(item['detail'])
+    r = res.json()
+
+    nearby_cities_url = r['properties']['products']['nearby-cities'][0]['contents']['nearby-cities.json']['url']
+    res = requests.get(nearby_cities_url)
+    r = res.json()
+
+    out = []
+    append = out.append
+    for i in r:
+        if i['distance'] < 100:
+            append('a ' + str(i['distance']) + ' km al ' + i['direction'] + ' de ' + i['name'])
+    if len(out) > 1:
+        out[-1] = 'y ' + out[-1]
+    nearby_cities = ', '.join(out)
+    pattern = re.compile(item['country'] + ', ', re.I)
+    nearby_cities = re.sub(pattern, '', nearby_cities)
+    return nearby_cities
