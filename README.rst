@@ -10,6 +10,10 @@
    :target: https://pypi.python.org/pypi/salvitobot/
    :alt: Latest Version
 
+.. image:: https://img.shields.io/badge/WTF-license-blue.svg?style=flat
+   :target: https://github.com/aniversarioperu/salvitobot/blob/master/LICENSE
+   :alt: WTF License
+
 En construcción!
 ================
 
