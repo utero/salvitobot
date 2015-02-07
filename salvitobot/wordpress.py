@@ -29,3 +29,6 @@ def post_to_wp(title, content):
     # whoops, I forgot to publish it!
     post.post_status = 'publish'
     wp.call(posts.EditPost(post.id, post))
+
+    # return post url based on config wp_client and datetime_local
+    return 'hola'
