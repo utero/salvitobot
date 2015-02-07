@@ -16,18 +16,20 @@ class Writer(object):
     """
     def __init__(self):
         self.template = "Un _tremor_ de _magnitude_level_ magnitud de _magnitude_integer_ " \
-                        "grados tuvo lugar el _date_local_str_ por la _time_of_day1_ a " \
-                        "_epicenter_ según el Servicio Geológico de EE.UU. \n" \
-                        "El _tremor_ se produjo a las _time_ de la _time_of_day2_, " \
-                        "del Tiempo universal coordinado (UTC), a una profundidad de " \
-                        "_depth_ kilómetros. \n\n " \
+                        "grados se produjo el _date_local_str_ por la _time_of_day_ a " \
+                        "_epicenter_, reportó el Servicio Geológico de EE.UU. \n" \
+                        "El _tremor_ se registró a las _time_ de la _time_of_day_, " \
+                        "hora local, a una profundidad de " \
+                        "_depth_ kilómetros.\n\n" \
                         "Según el USGS, el epicentro se ubicó _nearby_cities_.\n"
         self.positive_historial_template = "En los últimos _days_ días, se han registrado " \
                                            "_how_many_ temblores de magnitud 3.0 o mayores en esta zona."
         self.negative_historial_template = "En los últimos _days_ días, no se registraron temblores de" \
                                            "magnitud 3.0 o mayores en esta zona."
-        self.template_footer = "La información proviene del USGS Earthquake Notification Service. Este post " \
-                               "fue elaborado por un algoritmo escrito por el autor."
+        self.template_footer = "La información proviene del Servicio de Notificación del Servicio Geológico " \
+                               "estadounidense. Este texto " \
+                               "fue elaborado por un algoritmo escrito por " \
+                               "<a href='https://twitter.com/AniversarioPeru'>@AniversarioPeru</a>."
 
     def write_post(self, items, publish=None):
         """
@@ -58,36 +60,24 @@ class Writer(object):
                 magnitude_level = 'escasa'
 
             magnitude_integer = str(item['magnitude'])
-            date_local = item['datetime_utc'] + td(minutes=item['tz'])
+            date_local = item['datetime_local']
             a = arrow.get(date_local)
             date_local_str = a.format('DD MMM, YYYY', locale='es_es')
+            time = datetime.datetime.strftime(date_local, '%I:%M')
 
             hour_of_day = int(datetime.datetime.strftime(date_local, '%H'))
             if 6 <= hour_of_day < 12:
-                time_of_day1 = 'mañana'
+                time_of_day = 'mañana'
             elif 12 <= hour_of_day < 18:
-                time_of_day1 = 'tarde'
+                time_of_day = 'tarde'
             elif 18 <= hour_of_day < 24:
-                time_of_day1 = 'noche'
+                time_of_day = 'noche'
             elif hour_of_day == 24:
-                time_of_day1 = 'madrugada'
+                time_of_day = 'madrugada'
             elif hour_of_day < 6:
-                time_of_day1 = 'madrugada'
+                time_of_day = 'madrugada'
 
             epicenter = item['place']
-
-            time = datetime.datetime.strftime(item['datetime_utc'], '%H:%M')
-            hour_of_day = int(datetime.datetime.strftime(item['datetime_utc'], '%H'))
-            if 6 <= hour_of_day < 12:
-                time_of_day2 = 'mañana'
-            elif 12 <= hour_of_day < 18:
-                time_of_day2 = 'tarde'
-            elif 18 <= hour_of_day < 24:
-                time_of_day2 = 'noche'
-            elif hour_of_day == 24:
-                time_of_day2 = 'madrugada'
-            elif hour_of_day < 6:
-                time_of_day2 = 'madrugada'
 
             depth = str(item['depth'])
 
@@ -101,13 +91,12 @@ class Writer(object):
             text = re.sub('_magnitude_level_', magnitude_level, text)
             text = re.sub('_magnitude_integer_', magnitude_integer, text)
             text = re.sub('_date_local_str_', date_local_str, text)
-            text = re.sub('_time_of_day1_', time_of_day1, text)
-            text = re.sub('_time_of_day2_', time_of_day2, text)
+            text = re.sub('_time_of_day_', time_of_day, text)
             text = re.sub('_epicenter_', epicenter, text)
             text = re.sub('_time_', time, text)
             text = re.sub('_depth_', depth, text)
 
-            title = 'Temblor grado ' + magnitude_integer + ' en ' + epicenter
+            title = tremor.capitalize() + ' de ' + magnitude_integer + ' se registró a ' + epicenter
 
             if publish is True:
                 post_url = post_to_wp(title, text, item['datetime_local'])
