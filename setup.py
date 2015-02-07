@@ -33,7 +33,7 @@ test_requirements = [
 
 setup(
     name="salvitobot",
-    version="0.1.2",
+    version="0.2.0",
     url="https://github.com/aniversarioperu/salvitobot",
 
     author="AniversarioPeru",
