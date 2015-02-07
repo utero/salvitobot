@@ -74,12 +74,7 @@ def create_database(test=None):
 
     if not os.path.isfile(filename):
         db = dataset.connect('sqlite:///' + filename)
-        table = db.create_table("salvitobot")
-        table.create_column('code', sqlalchemy.String)  # unique identifier of earthquake
-        table.create_column('url', sqlalchemy.String)
-        table.create_column('tweet', sqlalchemy.String)
-        table.create_column('blogpost', sqlalchemy.Text)
-        table.create_column('twitter_user', sqlalchemy.String)
+        db.create_table("salvitobot")
     else:
         db = dataset.connect('sqlite:///' + filename)
 
@@ -98,14 +93,14 @@ def translate_string(this_string):
     return this_string
 
 
-def save_to_db(item):
+def save_to_db(item, test=None):
     """
     Saves quake item to local sqlite3 database.
 
     :param item:
 
     """
-    db = create_database()
+    db = create_database(test)
     table = db['salvitobot']
     row = table.find_one(code=item['code'])
 
