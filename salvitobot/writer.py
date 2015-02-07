@@ -16,18 +16,19 @@ class Writer(object):
     """
     def __init__(self):
         self.template = "Un _tremor_ de _magnitude_level_ magnitud de _magnitude_integer_ " \
-                        "grados tuvo lugar el _date_local_str_ por la _time_of_day1_ a " \
-                        "_epicenter_ según el Servicio Geológico de EE.UU. \n" \
-                        "El _tremor_ se produjo a las _time_ de la _time_of_day2_, " \
-                        "del Tiempo universal coordinado (UTC), a una profundidad de " \
+                        "grados se produjo el _date_local_str_ por la _time_of_day1_ a " \
+                        "_epicenter_, reportó el Servicio Geológico de EE.UU. \n" \
+                        "El _tremor_ se registró a las _time_ de la _time_of_day2_, " \
+                        "hora local, a una profundidad de " \
                         "_depth_ kilómetros. \n\n " \
                         "Según el USGS, el epicentro se ubicó _nearby_cities_.\n"
         self.positive_historial_template = "En los últimos _days_ días, se han registrado " \
                                            "_how_many_ temblores de magnitud 3.0 o mayores en esta zona."
         self.negative_historial_template = "En los últimos _days_ días, no se registraron temblores de" \
                                            "magnitud 3.0 o mayores en esta zona."
-        self.template_footer = "La información proviene del USGS Earthquake Notification Service. Este post " \
-                               "fue elaborado por un algoritmo escrito por el autor."
+        self.template_footer = "La información proviene del Servicio de Notificación del Servicio Geológico " \
+                               "estadounidense. Este texto " \
+                               "fue elaborado por un algoritmo escrito por @AniversarioPeru."
 
     def write_post(self, items, publish=None):
         """
@@ -107,7 +108,7 @@ class Writer(object):
             text = re.sub('_time_', time, text)
             text = re.sub('_depth_', depth, text)
 
-            title = 'Temblor grado ' + magnitude_integer + ' en ' + epicenter
+            title = tremor.capitalize() + ' de ' + magnitude_integer + ' se registr+o en ' + epicenter
 
             if publish is True:
                 post_url = post_to_wp(title, text, item['datetime_local'])

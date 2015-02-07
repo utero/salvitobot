@@ -41,6 +41,10 @@ def post_to_wp(title, content, datetime_local):
     post.post_status = 'publish'
     wp.call(posts.EditPost(post.id, post))
 
+    post.terms_names = {
+        'post_tag': ['salvitobot', 'temblor'],
+        'category': ['noticias']
+    }
     # return post url based on config wp_client and datetime_local
     return make_url(title, datetime_local)
 
