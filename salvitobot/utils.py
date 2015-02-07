@@ -74,12 +74,7 @@ def create_database(test=None):
 
     if not os.path.isfile(filename):
         db = dataset.connect('sqlite:///' + filename)
-        table = db.create_table("salvitobot")
-        table.create_column('code', sqlalchemy.String)  # unique identifier of earthquake
-        table.create_column('url', sqlalchemy.String)
-        table.create_column('tweet', sqlalchemy.String)
-        table.create_column('blogpost', sqlalchemy.Text)
-        table.create_column('twitter_user', sqlalchemy.String)
+        db.create_table("salvitobot")
     else:
         db = dataset.connect('sqlite:///' + filename)
 
