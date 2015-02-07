@@ -23,8 +23,10 @@ class TestUtils(unittest.TestCase):
         result = utils.parse_quake_data(self.data1, 'Venezuela')
 
         expected = datetime.datetime(2015, 2, 5, 5, 38, 57, 769999, tzinfo=pytz.utc)
+        expected_local = datetime.datetime(2015, 2, 5, 1, 8, 57, 769999, tzinfo=pytz.utc)
         self.assertEqual(1, len(result))
         self.assertEqual(expected, result[0]['datetime_utc'])
+        self.assertEqual(expected_local, result[0]['datetime_local'])
 
     def test_parse_quake_data_two_quakes(self):
         with open(os.path.join(self.cwd, 'Quake', '2.json'), 'r') as handle:

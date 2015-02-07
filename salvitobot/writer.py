@@ -63,7 +63,6 @@ class Writer(object):
             date_local_str = a.format('DD MMM, YYYY', locale='es_es')
 
             hour_of_day = int(datetime.datetime.strftime(date_local, '%H'))
-            print(hour_of_day)
             if 6 <= hour_of_day < 12:
                 time_of_day1 = 'mañana'
             elif 12 <= hour_of_day < 18:
@@ -111,9 +110,10 @@ class Writer(object):
             title = 'Temblor grado ' + magnitude_integer + ' en ' + epicenter
 
             if publish is True:
-                post_to_wp(title, text)
+                post_url = post_to_wp(title, text, item['datetime_local'])
                 save_to_db(item)
                 print("Published post with title %s" % title)
+                return post_url
 
             if publish is False:
                 print(text)

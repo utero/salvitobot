@@ -2,6 +2,7 @@ import datetime
 import os
 import re
 
+import arrow
 import dataset
 import pytz
 import sqlalchemy
@@ -46,7 +47,11 @@ def parse_quake_data(data, country):
             # depth is in km
             obj['depth'] = i['geometry']['coordinates'][2]
 
-            obj['datetime_utc'] = datetime.datetime.fromtimestamp(obj['time'] / 1000, pytz.utc)
+            utc = arrow.get(datetime.datetime.fromtimestamp(obj['time'] / 1000, pytz.utc))
+            obj['datetime_utc'] = utc.datetime
+
+            local = utc.replace(minutes=obj['tz'])
+            obj['datetime_local'] = local.datetime
 
             out = "SISMO"
             out += ". " + str(obj['magnitude']) + " grados " + obj['magnitude_type']
