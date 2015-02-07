@@ -2,6 +2,14 @@
    :target: https://travis-ci.org/aniversarioperu/salvitobot
    :alt: Latest Travis CI build status
 
+.. image:: https://readthedocs.org/projects/salvitobot/badge/?version=latest
+   :target: http://salvitobot.readthedocs.org/en/latest/
+   :alt: Documentation Status
+
+.. image:: https://pypip.in/version/salvitobot/badge.svg?style=flat
+   :target: https://pypi.python.org/pypi/salvitobot/
+   :alt: Latest Version
+
 En construcción!
 ================
 
