@@ -89,3 +89,18 @@ class TestUtils(unittest.TestCase):
 
     def test_write_post_no_country(self):
         self.assertRaises(ProcedureError, self.bot.write_post)
+
+    def test_write_post_nothing_to_post(self):
+        self.bot.get_quake(self.data1, country='Venezuela')
+        self.bot._quakes_to_write = []
+        expected = "Nothing to do."
+        result = self.bot.write_post()
+        self.assertEqual(expected, result)
+
+    def test_write_post(self):
+        self.bot.get_quake(self.data1, country='Venezuela')
+        self.bot.is_new_quake()
+        expected = [None]
+        self.bot.write_post(publish=False)
+        result = self.bot.post_url
+        self.assertEqual(expected, result)
