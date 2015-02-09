@@ -111,71 +111,8 @@ class Bot(object):
         else:
             if len(self._quakes_to_write) < 1:
                 print("Nothing to do.")
+                return "Nothing to do."
             else:
                 blogger = Writer()
                 post_url = blogger.write_post(self._quakes_to_write, publish)
                 self.post_url.append(post_url)
-
-
-def a():
-    # line is a line of downloaded data
-    match = re.search("(http://.+)", tuit)
-    user = re.search("(@\w+)", tuit)
-
-    item = dict()
-    item['url'] = match.groups()[0]
-    item['tuit'] = tuit
-    if user:
-        item['twitter_user'] = user.groups()[0]
-
-        if not table.find_one(url=item['url'], twitter_user=item['twitter_user']):
-            print("DO TUIT: %s" % str(item['tuit']))
-            table.insert(item)
-            return "do_tuit"
-        else:
-            print("DONT TUIT: %s" % str(item['tuit']))
-            return "dont_tuit"
-    else:
-        if not table.find_one(url=item['url']):
-            print("DO TUIT: %s" % str(item['tuit']))
-            table.insert(item)
-            return "do_tuit"
-        else:
-            print("DONT TUIT: %s" % str(item['tuit']))
-            return "dont_tuit"
-
-
-def tuit(lista, debug):
-    # print lista
-    oauth = api.get_oauth()
-
-    users = [
-        # 'manubellido',
-        # 'aniversarioperu',
-        'indeciperu',
-        # 'ernestocabralm',
-    ]
-    for twitter_user in users:
-        # send mention
-        for obj in lista:
-            # status = "@" + twitter_user + " TEST " + message
-            # status = message
-            status = obj['tuit'] + " cc @" + twitter_user
-            # status = message
-
-            # should we tuit this message?
-            to_tuit = lib.insert_to_db(status)
-            if to_tuit == "do_tuit":
-
-                # print status
-                payload = {'status': status}
-                url = "https://api.twitter.com/1.1/statuses/update.json"
-
-                try:
-                    print("Tweet ", payload)
-                    if debug == 0:
-                        r = requests.post(url=url, auth=oauth, params=payload)
-                        # print json.loads(r.text)['id_str']
-                        save_tuit(status)
-                except:
-                    print("Error")
