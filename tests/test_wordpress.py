@@ -3,10 +3,13 @@ import unittest
 import os
 import json
 
+import xmlrpc
 import pytz
+import wordpress_xmlrpc
 
 import salvitobot
 from salvitobot.wordpress import make_url
+from salvitobot.wordpress import post_to_wp
 
 
 class TestUtils(unittest.TestCase):
@@ -28,3 +31,6 @@ class TestUtils(unittest.TestCase):
         expected = 'http://example.com/2015/02/07/blah-blah/'
 
         self.assertEqual(expected, result)
+
+    def test_post_to_wp(self):
+        self.assertRaises(wordpress_xmlrpc.exceptions.ServerConnectionError, post_to_wp, 'title', 'content', datetime.datetime(2015, 1, 1))
