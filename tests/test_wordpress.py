@@ -5,6 +5,7 @@ import json
 
 import pytz
 
+from salvitobot import config
 import salvitobot
 from salvitobot.wordpress import make_url
 
