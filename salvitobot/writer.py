@@ -31,19 +31,12 @@ class Writer(object):
                                "fue elaborado por un algoritmo escrito por " \
                                "<a href='https://twitter.com/AniversarioPeru'>@AniversarioPeru</a>."
 
-    def write_post(self, items, publish=None):
+    def write_stories(self, items):
         """
 
         :param items: list of earthquake data (as dictionaries)
-        :param publish: required, True or False to send to Wordpress
-
-        :raises ToPublishPostError: Error if user does not specify to publish this post or not. Use
-                                    ``publish=True`` or ``publish=False``.
-
         """
-        if publish is None and publish is not True and publish is not False:
-            raise ToPublishPostError("You need to specify to publish or not this post: publish=False")
-
+        stories = []
         for item in items:
             nearby_cities = extract_nearby_cities(item)
 
@@ -98,11 +91,11 @@ class Writer(object):
 
             title = tremor.capitalize() + ' de ' + magnitude_integer + ' se registró a ' + epicenter
 
-            if publish is True:
-                post_url = post_to_wp(title, text, item['datetime_local'])
-                save_to_db(item)
-                print("Published post with title %s" % title)
-                return post_url
-
-            if publish is False:
-                print(text)
+            story = {
+                'title': title,
+                'body': text,
+                'local_time': item['datetime_local']
+            }
+            save_to_db(item)
+            stories.append(story)
+        return stories
