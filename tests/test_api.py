@@ -102,5 +102,5 @@ class TestUtils(unittest.TestCase):
         self.bot.is_new_quake()
         expected = [None]
         self.bot.write_post(publish=False)
-        result = self.bot.post_url
+        result = self.bot.post_urls
         self.assertEqual(expected, result)

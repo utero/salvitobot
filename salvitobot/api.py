@@ -33,7 +33,7 @@ class Bot(object):
     def __init__(self):
         self.quake = None
         self._quakes_to_write = []
-        self.post_url = []
+        self.post_urls = []
         self.urls = [
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
@@ -99,7 +99,7 @@ class Bot(object):
             else:
                 return False
 
-    def write_story(self):
+    def write_stories(self):
         """
         Write story for new quakes.
 
@@ -121,5 +121,5 @@ class Bot(object):
     def post_to_wp(self):
         for item in self.stories:
             url_from_post = wordpress.post_to_wp(item['title'], item['body'], item['local_time'])
-            self.post_url.append(url_from_post)
+            self.post_urls.append(url_from_post)
             print(url_from_post)

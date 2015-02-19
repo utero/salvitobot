@@ -37,7 +37,7 @@ Averigua si este sismo es nuevo y no está en la base de datos::
 
 Ya que es nuevo, escribe un post pero no lo publiques aún::
 
-    >>> bot.write_story()
+    >>> bot.write_stories()
     <BLANKLINE>
     Un temblor de mediana magnitud de 4.7 grados tuvo
     lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
@@ -61,5 +61,5 @@ Publica el post en tu instalación de WordPress::
 
 Salvitobot intentará adiviar el URL de tu post::
 
-    >>> bot.post_url
+    >>> bot.post_urls
     ['https://example.wordpress.com/2015/02/06/blah-blah/']

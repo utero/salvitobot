@@ -144,6 +144,3606 @@ Ya que es nuevo, escribe un post y publícalo en WordPress:
 
 .. code:: python
 
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_stories(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_story(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
+    >>> bot.write_post(publish=True)
+    <BLANKLINE>
+    Un temblor de mediana magnitud de 4.7 grados tuvo
+    lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
+    según el Servicio Geológico de EE.UU.
+    El temblor se produjo a las 21:50 de la tarde,
+    del Tiempo universal coordinado (UTC), a una profundidad de
+    72.38 kilómetros.
+    <BLANKLINE>
+    Según el USGS, el epicentro se ubicó a _related_place_.
+    <BLANKLINE>
+    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
+    zona.
+    <BLANKLINE>
+    La información proviene del USGS Earthquake Notification Service. Este post
+    fue elaborado por un algoritmo escrito por el autor.
+    <BLANKLINE>
+
+Lee la documentación completa aquí:
+
     >>> bot.write_story(publish=True)
     <BLANKLINE>
     Un temblor de mediana magnitud de 4.7 grados tuvo
