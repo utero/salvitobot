@@ -65,3 +65,7 @@ Si no quieres que Salvitobot postee automáticamente en tu blog de Wordpress,
 puedes pedir a Salvitobot que te envíe la nota periodística a tu email::
 
     >>> bot.send_mail_to(['production@utero.pe', 'aniversarioperu1@gmail.com'])
+
+Y por último, también puedes enviar un tuit avisando del sismo a todos tus seguidores::
+
+    >>> bot.tweet()

@@ -1,17 +1,15 @@
 import codecs
-from datetime import datetime
-from datetime import timedelta as td
 import json
 import os
-import re
 import time
 
 import requests
 
 from . import config
 from . import utils
-from . import wordpress
 from . import email
+from . import wordpress
+from . import twitter
 from .writer import Writer
 from .exceptions import NoCountryError
 from .exceptions import ProcedureError
@@ -127,3 +125,6 @@ class Bot(object):
 
     def send_email_to(self, email_receivers):
         email.send(email_receivers, self.stories)
+
+    def tweet(self):
+        twitter.post_to_twitter(self._quakes_to_write)

@@ -5,7 +5,6 @@ import re
 import arrow
 import dataset
 import pytz
-import sqlalchemy
 import requests
 
 from . import config
@@ -56,7 +55,8 @@ def parse_quake_data(data, country):
             out = "SISMO"
             out += ". " + str(obj['magnitude']) + " grados " + obj['magnitude_type']
             out += " en " + obj['place']
-            out += ". A horas "
+            out += ". A horas " + datetime.datetime.strftime(obj['datetime_local'], '%H:%M')
+            out += " del " + datetime.datetime.strftime(obj['datetime_local'], '%d %b')
             out += " " + obj['link']
 
             obj['tuit'] = out
