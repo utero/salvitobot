@@ -56,7 +56,7 @@ Publica el post en tu instalación de WordPress::
 
     >>> bot.post_to_wp()
 
-Salvitobot intentará adiviar el URL de tu post::
+Salvitobot intentará adivinar el URL de tu post::
 
     >>> bot.post_urls
     ['https://example.wordpress.com/2015/02/06/blah-blah/']
