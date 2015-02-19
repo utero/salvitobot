@@ -10,10 +10,11 @@ import requests
 
 from . import config
 from . import utils
+from . import wordpress
+from . import email
 from .writer import Writer
 from .exceptions import NoCountryError
 from .exceptions import ProcedureError
-from . import wordpress
 
 
 class Bot(object):
@@ -123,3 +124,6 @@ class Bot(object):
             url_from_post = wordpress.post_to_wp(item['title'], item['body'], item['local_time'])
             self.post_urls.append(url_from_post)
             print(url_from_post)
+
+    def send_email_to(self, email_receivers):
+        email.send(email_receivers, self.stories)

@@ -63,3 +63,8 @@ Salvitobot intentará adiviar el URL de tu post::
 
     >>> bot.post_urls
     ['https://example.wordpress.com/2015/02/06/blah-blah/']
+
+Si no quieres que Salvitobot postee automáticamente en tu blog de Wordpress,
+puedes pedir a Salvitobot que te envíe la nota periodística a tu email::
+
+    >>> bot.send_mail_to(['production@utero.pe', 'aniversarioperu1@gmail.com'])
