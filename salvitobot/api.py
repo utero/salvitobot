@@ -7,9 +7,9 @@ import requests
 
 from . import config
 from . import utils
-from . import email
-from . import wordpress
-from . import twitter
+from . import salvito_email
+from . import salvito_wordpress
+from . import salvito_twitter
 from .writer import Writer
 from .exceptions import NoCountryError
 from .exceptions import ProcedureError
@@ -119,12 +119,12 @@ class Bot(object):
 
     def post_to_wp(self):
         for item in self.stories:
-            url_from_post = wordpress.post_to_wp(item['title'], item['body'], item['local_time'])
+            url_from_post = salvito_wordpress.post_to_wp(item['title'], item['body'], item['local_time'])
             self.post_urls.append(url_from_post)
             print(url_from_post)
 
     def send_email_to(self, email_receivers):
-        email.send(email_receivers, self.stories)
+        salvito_email.send(email_receivers, self.stories)
 
     def tweet(self):
-        twitter.post_to_twitter(self._quakes_to_write)
+        salvito_twitter.post_to_twitter(self._quakes_to_write)

@@ -6,7 +6,7 @@ import arrow
 
 from .utils import save_to_db
 from .utils import extract_nearby_cities
-from .wordpress import post_to_wp
+from .salvito_wordpress import post_to_wp
 from .exceptions import ToPublishPostError
 
 
