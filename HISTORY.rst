@@ -1,8 +1,12 @@
 HISTORY
 =======
 
-0.3.0 (2015-02-19)
+0.3.1 (2015-02-19)
 ~~~~~~~~~~~~~~~~~~
+- Rename modules to avoid import conflicts.
+
+0.3.0 (2015-02-19)
+------------------
 - Refactor posting to Wordpress.
 - Posting to Twitter.
 - Send stories by email.
