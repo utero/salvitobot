@@ -16,6 +16,11 @@ def send(email_receivers, stories):
         try:
             smtpObj = smtplib.SMTP('localhost')
             smtpObj.sendmail(sender, email_receivers, message.encode('utf-8'))
-            print("Successfully sent email. Probably it went to your SPAM folder.")
+            message_to_user = "\nSuccessfully sent email.\n" \
+                              "Probably it went to your SPAM folder.\n" \
+                              "If you are using Gmail you might need to create a filter\n" \
+                              "to avoid sending emails from <salvitobot@salvitobot.com> to \n" \
+                              "your SPAM folder. More info here https://support.google.com/mail/answer/6579\n"
+            print(message_to_user)
         except smtplib.SMTPException:
             print("Error: unable to send email")
