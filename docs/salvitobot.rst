@@ -44,6 +44,14 @@ salvitobot.exceptions module
     :undoc-members:
     :show-inheritance:
 
+salvitobot.twitter module
+-------------------------
+
+.. automodule:: salvitobot.twitter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 salvitobot.utils module
 -----------------------
 
