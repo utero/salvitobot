@@ -6,8 +6,8 @@ Usage
 
 Encuentra sismos recientes para Perú::
 
-    >>> import salvitobot
-    >>> bot = salvitobot.Bot()
+    >>> from salvitobot import Bot
+    >>> bot = Bot()
     >>> bot.get_quake(country='Peru')
     >>> bot.quake
     []
@@ -37,7 +37,7 @@ Averigua si este sismo es nuevo y no está en la base de datos::
 
 Ya que es nuevo, escribe un post pero no lo publiques aún::
 
-    >>> bot.write_post(publish=False)
+    >>> bot.write_stories()
     <BLANKLINE>
     Un temblor de mediana magnitud de 4.7 grados tuvo
     lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
@@ -57,9 +57,14 @@ Ya que es nuevo, escribe un post pero no lo publiques aún::
 
 Publica el post en tu instalación de WordPress::
 
-    >>> bot.write_post(publish=True)
+    >>> bot.post_to_wp()
 
 Salvitobot intentará adiviar el URL de tu post::
 
-    >>> bot.post_url
+    >>> bot.post_urls
     ['https://example.wordpress.com/2015/02/06/blah-blah/']
+
+Si no quieres que Salvitobot postee automáticamente en tu blog de Wordpress,
+puedes pedir a Salvitobot que te envíe la nota periodística a tu email::
+
+    >>> bot.send_mail_to(['production@utero.pe', 'aniversarioperu1@gmail.com'])

@@ -123,9 +123,14 @@ def extract_nearby_cities(item):
 
     out = []
     append = out.append
+
+    j = 0
     for i in r:
-        if i['distance'] < 100:
-            append('a ' + str(i['distance']) + ' km al ' + i['direction'] + ' de ' + i['name'])
+        append('a ' + str(i['distance']) + ' km al ' + i['direction'] + ' de ' + i['name'])
+        j += 1
+        if j == 2:
+            break
+
     if len(out) > 1:
         out[-1] = 'y ' + out[-1]
     nearby_cities = ', '.join(out)
