@@ -3,7 +3,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.header import Header
 from email import charset
-from email.charset import Charset
 from email.generator import Generator
 import io
 
