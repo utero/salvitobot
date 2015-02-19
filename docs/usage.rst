@@ -46,10 +46,7 @@ Ya que es nuevo, escribe un post pero no lo publiques aún::
     del Tiempo universal coordinado (UTC), a una profundidad de
     72.38 kilómetros.
     <BLANKLINE>
-    Según el USGS, el epicentro se ubicó a _related_place_.
-    <BLANKLINE>
-    En los últimos _days_ días, no se registraron temblores de magnitud 3.0 o mayores en esta
-    zona.
+    Según el USGS, el epicentro se ubicó a 2 km al SW de Umuquena, y a 18 km al E de La Fria, Venezuela.
     <BLANKLINE>
     La información proviene del USGS Earthquake Notification Service. Este post
     fue elaborado por un algoritmo escrito por el autor.

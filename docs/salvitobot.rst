@@ -28,18 +28,18 @@ salvitobot.config module
     :undoc-members:
     :show-inheritance:
 
-salvitobot.exceptions module
-----------------------------
+salvitobot.email module
+-----------------------
 
-.. automodule:: salvitobot.exceptions
+.. automodule:: salvitobot.email
     :members:
     :undoc-members:
     :show-inheritance:
 
-salvitobot.extract_quake module
--------------------------------
+salvitobot.exceptions module
+----------------------------
 
-.. automodule:: salvitobot.extract_quake
+.. automodule:: salvitobot.exceptions
     :members:
     :undoc-members:
     :show-inheritance:
