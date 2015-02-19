@@ -1,8 +1,13 @@
 HISTORY
 =======
 
-0.3.1 (2015-02-19)
+0.3.2 (2015-02-19)
 ~~~~~~~~~~~~~~~~~~
+- ``bot.py`` script should be above ``salvitobot`` module.
+- fix typo in usage.
+
+0.3.1 (2015-02-19)
+------------------
 - Rename modules to avoid import conflicts.
 
 0.3.0 (2015-02-19)
