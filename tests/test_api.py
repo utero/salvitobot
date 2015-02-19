@@ -50,9 +50,8 @@ class TestUtils(unittest.TestCase):
 
     def test_is_new_quake_false_empty(self):
         self.bot.get_quake(my_dict=self.data1, country='Narnia')
-        expected = False
         result = self.bot.is_new_quake()
-        self.assertEqual(expected, result)
+        self.assertFalse(result)
 
     def test_is_new_quake_false_in_db(self):
         item = {
@@ -84,23 +83,22 @@ class TestUtils(unittest.TestCase):
     def test_extract_nearby_cities(self):
         self.bot.get_quake(my_dict=self.data1, country='Venezuela')
         result = utils.extract_nearby_cities(self.bot.quake[0])
-        expected = "a 2 km al SW de Umuquena, a 18 km al E de La Fria, a 31 km al NE de San Juan de Colon, y a 38 km al ESE de Puerto Santander, Colombia"
+        expected = "a 2 km al SW de Umuquena, y a 18 km al E de La Fria, Venezuela"
         self.assertEqual(expected, result)
 
     def test_write_post_no_country(self):
-        self.assertRaises(ProcedureError, self.bot.write_post)
+        self.assertRaises(ProcedureError, self.bot.write_stories)
 
     def test_write_post_nothing_to_post(self):
         self.bot.get_quake(self.data1, country='Venezuela')
         self.bot._quakes_to_write = []
         expected = "Nothing to do."
-        result = self.bot.write_post()
+        result = self.bot.write_stories()
         self.assertEqual(expected, result)
 
     def test_write_post(self):
         self.bot.get_quake(self.data1, country='Venezuela')
         self.bot.is_new_quake()
-        expected = [None]
-        self.bot.write_post(publish=False)
-        result = self.bot.post_urls
-        self.assertEqual(expected, result)
+        self.bot.write_stories()
+        result = self.bot.stories
+        self.assertTrue(len(result) > 0)
