@@ -5,6 +5,7 @@ HISTORY
 ~~~~~~~~~~~~~~~~~~
 - Refactor posting to Wordpress.
 - Posting to Twitter.
+- Send stories by email.
 
 0.2.0 (2015-02-07)
 ------------------
