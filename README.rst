@@ -96,9 +96,13 @@ y claves secretas:
         "twitter_token": "",
         "twitter_token_secret": "",
         "wordpress_client": "https://mydomain.wordpress.com/xmlrpc.php",
-        "wordpress_username": "salvitobot",
-        "wordpress_password": ""
+        "wordpress_username": "usuario",
+        "wordpress_password": "contrasena"
     }
+
+Las información que deber ir en ``twitter_key``, ``twitter_secret``, ``twitter_token``
+y ``twitter_token_secret`` se obtiene al registrar una nueva "app" en Twitter.
+Para eso debes dirigirte a esta página https://apps.twitter.com/
 
 Uso
 ===
