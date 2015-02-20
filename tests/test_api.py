@@ -83,7 +83,7 @@ class TestUtils(unittest.TestCase):
     def test_extract_nearby_cities(self):
         self.bot.get_quake(my_dict=self.data1, country='Venezuela')
         result = utils.extract_nearby_cities(self.bot.quake[0])
-        expected = "a 2 km al SW de Umuquena, y a 18 km al E de La Fria, Venezuela"
+        expected = "a 2 km al SO de Umuquena, Venezuela, a 18 km al E de La Fria, Venezuela y a 31 km al NE de San Juan de Colon, Venezuela"
         self.assertEqual(expected, result)
 
     def test_write_post_no_country(self):
