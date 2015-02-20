@@ -1,8 +1,12 @@
 HISTORY
 =======
 
-0.3.3 (2015-02-20)
+0.3.4 (2015-02-21)
 ~~~~~~~~~~~~~~~~~~
+- Use salvitobot image as cover in Wordpress posts.
+
+0.3.3 (2015-02-20)
+------------------
 - Added magnitude type.
 - Small fixes in story text.
 
