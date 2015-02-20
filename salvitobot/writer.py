@@ -16,8 +16,8 @@ class Writer(object):
     """
     def __init__(self):
         self.template = "Un _tremor_ de _magnitude_level_ magnitud de _magnitude_integer_ " \
-                        "grados se produjo el _date_local_str_ por la _time_of_day_ a " \
-                        "_epicenter_, reportó el Servicio Geológico de EE.UU. \n" \
+                        "grados _magnitude_type_ se produjo el _date_local_str_ por la _time_of_day_ a " \
+                        "_epicenter_, reportó el Servicio Geológico de EE.UU. \n\n" \
                         "El _tremor_ se registró a las _time_ de la _time_of_day_, " \
                         "hora local, a una profundidad de " \
                         "_depth_ kilómetros.\n\n" \
@@ -83,13 +83,16 @@ class Writer(object):
             text = re.sub('_tremor_', tremor, text)
             text = re.sub('_magnitude_level_', magnitude_level, text)
             text = re.sub('_magnitude_integer_', magnitude_integer, text)
+            text = re.sub('_magnitude_type_', str(item['magnitude_type']).capitalize(), text)
             text = re.sub('_date_local_str_', date_local_str, text)
             text = re.sub('_time_of_day_', time_of_day, text)
             text = re.sub('_epicenter_', epicenter, text)
             text = re.sub('_time_', time, text)
             text = re.sub('_depth_', depth, text)
 
-            title = tremor.capitalize() + ' de ' + magnitude_integer + ' se registró a ' + epicenter
+            title = tremor.capitalize() + ' de ' + magnitude_integer
+            title += ' grados ' + str(item['magnitude_type']).capitalize()
+            title += ' se registró a ' + epicenter
 
             story = {
                 'title': title,

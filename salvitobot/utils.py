@@ -15,7 +15,6 @@ def parse_quake_data(data, country):
 
     Args:
         ``data``: dict object as downloaded from web service.
-
         ``country``: string, country to look for earthquake for
 
     Returns:
@@ -53,8 +52,8 @@ def parse_quake_data(data, country):
             obj['datetime_local'] = local.datetime
 
             out = "SISMO"
-            out += ". " + str(obj['magnitude']) + " grados " + obj['magnitude_type']
-            out += " en " + obj['place']
+            out += ". " + str(obj['magnitude']) + " grados " + str(obj['magnitude_type']).capitalize()
+            out += " a " + obj['place']
             out += ". A horas " + datetime.datetime.strftime(obj['datetime_local'], '%H:%M')
             out += " del " + datetime.datetime.strftime(obj['datetime_local'], '%d %b')
             out += " " + obj['link']
@@ -95,6 +94,10 @@ def translate_string(this_string):
 
     """
     this_string = this_string.replace(' of ', ' de ')
+    this_string = this_string.replace(' W ', ' O ')
+    this_string = this_string.replace('NW', 'NO')
+    this_string = this_string.replace('WNW', 'ONO')
+    this_string = this_string.replace('SW', 'SO')
     return this_string
 
 
@@ -126,14 +129,15 @@ def extract_nearby_cities(item):
 
     j = 0
     for i in r:
-        append('a ' + str(i['distance']) + ' km al ' + i['direction'] + ' de ' + i['name'])
+        city = 'a ' + str(i['distance']) + ' km al '
+        city += translate_string(i['direction']) + ' de ' + i['name']
+        append(city)
         j += 1
-        if j == 2:
+        if j == 3:
             break
 
     if len(out) > 1:
         out[-1] = 'y ' + out[-1]
     nearby_cities = ', '.join(out)
-    pattern = re.compile(item['country'] + ', ', re.I)
-    nearby_cities = re.sub(pattern, '', nearby_cities)
+    nearby_cities = re.sub(', y', ' y', nearby_cities)
     return nearby_cities
