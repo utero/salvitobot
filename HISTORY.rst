@@ -1,8 +1,13 @@
 HISTORY
 =======
 
-0.3.2 (2015-02-19)
+0.3.3 (2015-02-20)
 ~~~~~~~~~~~~~~~~~~
+- Added magnitude type.
+- Small fixes in story text.
+
+0.3.2 (2015-02-19)
+------------------
 - ``bot.py`` script should be above ``salvitobot`` module.
 - fix typo in usage.
 

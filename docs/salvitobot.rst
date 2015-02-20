@@ -12,26 +12,10 @@ salvitobot.api module
     :undoc-members:
     :show-inheritance:
 
-salvitobot.bot module
----------------------
-
-.. automodule:: salvitobot.bot
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 salvitobot.config module
 ------------------------
 
 .. automodule:: salvitobot.config
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-salvitobot.email module
------------------------
-
-.. automodule:: salvitobot.email
     :members:
     :undoc-members:
     :show-inheritance:
@@ -44,10 +28,26 @@ salvitobot.exceptions module
     :undoc-members:
     :show-inheritance:
 
-salvitobot.twitter module
--------------------------
+salvitobot.salvito_email module
+-------------------------------
 
-.. automodule:: salvitobot.twitter
+.. automodule:: salvitobot.salvito_email
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+salvitobot.salvito_twitter module
+---------------------------------
+
+.. automodule:: salvitobot.salvito_twitter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+salvitobot.salvito_wordpress module
+-----------------------------------
+
+.. automodule:: salvitobot.salvito_wordpress
     :members:
     :undoc-members:
     :show-inheritance:
@@ -56,14 +56,6 @@ salvitobot.utils module
 -----------------------
 
 .. automodule:: salvitobot.utils
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-salvitobot.wordpress module
----------------------------
-
-.. automodule:: salvitobot.wordpress
     :members:
     :undoc-members:
     :show-inheritance:
