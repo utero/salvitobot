@@ -148,7 +148,7 @@ Ya que es nuevo, escribe un post y publícalo en WordPress:
 
 .. code:: python
 
-    >>> bot.write_stories(publish=True)
+    >>> bot.write_stories()
     <BLANKLINE>
     Un temblor de mediana magnitud de 4.7 grados tuvo
     lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
@@ -165,6 +165,14 @@ Ya que es nuevo, escribe un post y publícalo en WordPress:
     La información proviene del USGS Earthquake Notification Service. Este post
     fue elaborado por un algoritmo escrito por el autor.
     <BLANKLINE>
+
+Puedes postear el texto en tu blog Wordpress, envíe un tuit y por email:
+
+.. code:: python
+
+    >>> bot.post_to_wp()
+    >>> bot.tweet()
+    >>> bot.send_email_to(['myemailaccount@gmail.com'])
 
 Lee la documentación completa aquí: http://salvitobot.readthedocs.org/en/latest/
 
