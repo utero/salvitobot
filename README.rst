@@ -96,9 +96,13 @@ y claves secretas:
         "twitter_token": "",
         "twitter_token_secret": "",
         "wordpress_client": "https://mydomain.wordpress.com/xmlrpc.php",
-        "wordpress_username": "salvitobot",
-        "wordpress_password": ""
+        "wordpress_username": "usuario",
+        "wordpress_password": "contrasena"
     }
+
+Las información que deber ir en ``twitter_key``, ``twitter_secret``, ``twitter_token``
+y ``twitter_token_secret`` se obtiene al registrar una nueva "app" en Twitter.
+Para eso debes dirigirte a esta página https://apps.twitter.com/
 
 Uso
 ===
@@ -144,7 +148,7 @@ Ya que es nuevo, escribe un post y publícalo en WordPress:
 
 .. code:: python
 
-    >>> bot.write_post(publish=True)
+    >>> bot.write_stories()
     <BLANKLINE>
     Un temblor de mediana magnitud de 4.7 grados tuvo
     lugar el 05 Feb, 2015 por la tarde a 58km NNE of Gueiria, Venezuela
@@ -161,6 +165,14 @@ Ya que es nuevo, escribe un post y publícalo en WordPress:
     La información proviene del USGS Earthquake Notification Service. Este post
     fue elaborado por un algoritmo escrito por el autor.
     <BLANKLINE>
+
+Puedes postear el texto en tu blog Wordpress, envíe un tuit y por email:
+
+.. code:: python
+
+    >>> bot.post_to_wp()
+    >>> bot.tweet()
+    >>> bot.send_email_to(['myemailaccount@gmail.com'])
 
 Lee la documentación completa aquí: http://salvitobot.readthedocs.org/en/latest/
 

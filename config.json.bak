@@ -3,7 +3,7 @@
   "twitter_secret": "",
   "twitter_token": "",
   "twitter_token_secret": "",
-  "wordpress_client": "",
-  "wordpress_username": "salvitobot",
-  "wordpress_password": ""
+  "wordpress_client": "https://mydomain.wordpress.com/xmlrpc.php",
+  "wordpress_username": "usuario",
+  "wordpress_password": "contrasena"
 }

@@ -6,7 +6,7 @@ import arrow
 
 from .utils import save_to_db
 from .utils import extract_nearby_cities
-from .wordpress import post_to_wp
+from .salvito_wordpress import post_to_wp
 from .exceptions import ToPublishPostError
 
 
@@ -16,8 +16,8 @@ class Writer(object):
     """
     def __init__(self):
         self.template = "Un _tremor_ de _magnitude_level_ magnitud de _magnitude_integer_ " \
-                        "grados se produjo el _date_local_str_ por la _time_of_day_ a " \
-                        "_epicenter_, reportó el Servicio Geológico de EE.UU. \n" \
+                        "grados _magnitude_type_ se produjo el _date_local_str_ por la _time_of_day_ a " \
+                        "_epicenter_, reportó el Servicio Geológico de EE.UU. \n\n" \
                         "El _tremor_ se registró a las _time_ de la _time_of_day_, " \
                         "hora local, a una profundidad de " \
                         "_depth_ kilómetros.\n\n" \
@@ -31,19 +31,12 @@ class Writer(object):
                                "fue elaborado por un algoritmo escrito por " \
                                "<a href='https://twitter.com/AniversarioPeru'>@AniversarioPeru</a>."
 
-    def write_post(self, items, publish=None):
+    def write_stories(self, items):
         """
 
         :param items: list of earthquake data (as dictionaries)
-        :param publish: required, True or False to send to Wordpress
-
-        :raises ToPublishPostError: Error if user does not specify to publish this post or not. Use
-                                    ``publish=True`` or ``publish=False``.
-
         """
-        if publish is None and publish is not True and publish is not False:
-            raise ToPublishPostError("You need to specify to publish or not this post: publish=False")
-
+        stories = []
         for item in items:
             nearby_cities = extract_nearby_cities(item)
 
@@ -90,19 +83,22 @@ class Writer(object):
             text = re.sub('_tremor_', tremor, text)
             text = re.sub('_magnitude_level_', magnitude_level, text)
             text = re.sub('_magnitude_integer_', magnitude_integer, text)
+            text = re.sub('_magnitude_type_', str(item['magnitude_type']).capitalize(), text)
             text = re.sub('_date_local_str_', date_local_str, text)
             text = re.sub('_time_of_day_', time_of_day, text)
             text = re.sub('_epicenter_', epicenter, text)
             text = re.sub('_time_', time, text)
             text = re.sub('_depth_', depth, text)
 
-            title = tremor.capitalize() + ' de ' + magnitude_integer + ' se registró a ' + epicenter
+            title = tremor.capitalize() + ' de ' + magnitude_integer
+            title += ' grados ' + str(item['magnitude_type']).capitalize()
+            title += ' se registró a ' + epicenter
 
-            if publish is True:
-                post_url = post_to_wp(title, text, item['datetime_local'])
-                save_to_db(item)
-                print("Published post with title %s" % title)
-                return post_url
-
-            if publish is False:
-                print(text)
+            story = {
+                'title': title,
+                'body': text,
+                'local_time': item['datetime_local']
+            }
+            save_to_db(item)
+            stories.append(story)
+        return stories

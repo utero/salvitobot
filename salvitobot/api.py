@@ -1,15 +1,15 @@
 import codecs
-from datetime import datetime
-from datetime import timedelta as td
 import json
 import os
-import re
 import time
 
 import requests
 
 from . import config
 from . import utils
+from . import salvito_email
+from . import salvito_wordpress
+from . import salvito_twitter
 from .writer import Writer
 from .exceptions import NoCountryError
 from .exceptions import ProcedureError
@@ -22,21 +22,20 @@ class Bot(object):
 
     Attrs:
         ``quake``: list of quake objects fetched from web service.
-
         ``quakes_to_write``: list of quakes that are new to our database and
                              and need to be tweeted or written about.
-
         ``urls``: sources to fetch data on quakes.
 
     """
     def __init__(self):
         self.quake = None
         self._quakes_to_write = []
-        self.post_url = []
+        self.post_urls = []
         self.urls = [
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
             "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson",
         ]
+        self.stories = None
 
     def get_quake(self, my_dict=None, country=None):
         """Gets quake info from given dict, or the web.
@@ -44,7 +43,6 @@ class Bot(object):
         Args:
             ``my_dict``: optional, dictionary based on json object from the web
                          service.
-
             ``country``: required, country to get earthquakes for.
 
         Raises:
@@ -97,11 +95,10 @@ class Bot(object):
             else:
                 return False
 
-    def write_post(self, publish=None):
+    def write_stories(self):
         """
-        Write post for new quakes and publish in Wordpress.
+        Write story for new quakes.
 
-        :param publish: True or False
         :return: text of post
 
         """
@@ -113,6 +110,18 @@ class Bot(object):
                 print("Nothing to do.")
                 return "Nothing to do."
             else:
-                blogger = Writer()
-                post_url = blogger.write_post(self._quakes_to_write, publish)
-                self.post_url.append(post_url)
+                writer = Writer()
+                stories = writer.write_stories(self._quakes_to_write)
+                self.stories = stories
+
+    def post_to_wp(self):
+        for item in self.stories:
+            url_from_post = salvito_wordpress.post_to_wp(item['title'], item['body'], item['local_time'])
+            self.post_urls.append(url_from_post)
+            print(url_from_post)
+
+    def send_email_to(self, email_receivers):
+        salvito_email.send(email_receivers, self.stories)
+
+    def tweet(self):
+        salvito_twitter.post_to_twitter(self._quakes_to_write)

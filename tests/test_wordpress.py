@@ -7,7 +7,7 @@ import pytz
 
 from salvitobot import config
 import salvitobot
-from salvitobot.wordpress import make_url
+from salvitobot.salvito_wordpress import make_url
 
 
 class TestUtils(unittest.TestCase):
