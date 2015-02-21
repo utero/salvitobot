@@ -37,12 +37,12 @@ def post_to_wp(title, content, datetime_local):
     wp = Client(config.wordpress_client, config.wordpress_username, config.wordpress_password)
 
     # set to the path to your file
-    filename = os.path.join(config.base_folder, 'img', 'cat.jpg')
+    filename = os.path.join(config.base_folder, 'img', 'salvitobot.png')
 
     # prepare metadata
     data = {
-        'name': 'cat.jpg',
-        'type': 'image/jpeg',  # mimetype
+        'name': 'salvitobot.png',
+        'type': 'image/png',  # mimetype
     }
 
     # read the binary file and let the XMLRPC library encode it into base64
@@ -64,7 +64,7 @@ def post_to_wp(title, content, datetime_local):
     post.id = wp.call(posts.NewPost(post))
 
     post.terms_names = {
-        'post_tag': ['salvitobot', 'temblor'],
+        'post_tag': ['salvitobot', 'temblor', 'sismo'],
         'category': ['noticias']
     }
     post.thumbnail = attachment_id

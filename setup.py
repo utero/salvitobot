@@ -34,14 +34,14 @@ test_requirements = [
 
 setup(
     name="salvitobot",
-    version="0.2.0",
+    version="0.3.4",
     url="https://github.com/aniversarioperu/salvitobot",
 
     author="AniversarioPeru",
     author_email="aniversarioperu1@gmail.com", maintainer="AniversarioPeru",
     maintainer_email="aniversarioperu1@gmail.com",
 
-    description="avisa sismos y tsunamis",
+    description="avisa sismos",
     long_description=open('README.rst').read(),
 
     packages=[

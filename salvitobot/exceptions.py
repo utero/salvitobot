@@ -12,3 +12,7 @@ class ToPublishPostError(Exception):
 
 class WordPressNotConfigured(Exception):
     pass
+
+
+class NoTwitterToken(Exception):
+    pass
