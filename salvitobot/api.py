@@ -29,6 +29,7 @@ class Bot(object):
     """
     def __init__(self):
         self.quake = None
+        self.country = None
         self._quakes_to_write = []
         self.post_urls = []
         self.urls = [
@@ -51,6 +52,8 @@ class Bot(object):
         """
         if country is None:
             raise NoCountryError('You need to specify one country to get earthquakes for.')
+
+        self.country = country
 
         if my_dict is not None:
             self.quake = utils.parse_quake_data(my_dict, country=country)
@@ -111,7 +114,7 @@ class Bot(object):
                 return "Nothing to do."
             else:
                 writer = Writer()
-                stories = writer.write_stories(self._quakes_to_write)
+                stories = writer.write_stories(self._quakes_to_write, self.country)
                 self.stories = stories
 
     def post_to_wp(self):

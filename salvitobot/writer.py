@@ -1,13 +1,10 @@
 import datetime
-from datetime import timedelta as td
 import re
 
 import arrow
 
 from .utils import save_to_db
 from .utils import extract_nearby_cities
-from .salvito_wordpress import post_to_wp
-from .exceptions import ToPublishPostError
 
 
 class Writer(object):
@@ -31,14 +28,14 @@ class Writer(object):
                                "fue elaborado por un algoritmo escrito por " \
                                "<a href='https://twitter.com/AniversarioPeru'>@AniversarioPeru</a>."
 
-    def write_stories(self, items):
+    def write_stories(self, items, country):
         """
 
         :param items: list of earthquake data (as dictionaries)
         """
         stories = []
         for item in items:
-            nearby_cities = extract_nearby_cities(item)
+            nearby_cities = extract_nearby_cities(item, country)
 
             if item['magnitude'] > 7.5:
                 tremor = 'terremoto'
