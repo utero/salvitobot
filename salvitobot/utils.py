@@ -116,7 +116,7 @@ def save_to_db(item, test=None):
         table.insert(item)
 
 
-def extract_nearby_cities(item):
+def extract_nearby_cities(item, country):
     res = requests.get(item['detail'])
     r = res.json()
 
@@ -131,6 +131,7 @@ def extract_nearby_cities(item):
     for i in r:
         city = 'a ' + str(i['distance']) + ' km al '
         city += translate_string(i['direction']) + ' de ' + i['name']
+        city = city.replace(', ' + country, '')
         append(city)
         j += 1
         if j == 3:
